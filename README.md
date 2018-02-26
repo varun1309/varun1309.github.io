@@ -1,1 +1,1 @@
-Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/gh-pages/LICENSE) license.
+Code released under the [MIT](https://github.com/varun1309/varun1309.github.io/blob/master/LICENSE) license.
