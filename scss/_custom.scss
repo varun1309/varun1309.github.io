@@ -1,0 +1,20 @@
+.text-left{
+    text-align: left;
+}
+.title-background{
+    background-color: rgba(229, 229, 224, 0.4);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-primary{
+    color: $primary;
+}
+
+.text-secondary{
+    color: $secondary;
+}
+
+.hide{
+    visibility: hidden;
+}

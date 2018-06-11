@@ -85,9 +85,9 @@ h6 {
   display: table;
   width: 100%;
   height: auto;
-  padding-top: 8rem;
+  padding-top: 11rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/varun_profile.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,7 +121,7 @@ h6 {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #ecb807;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -364,4 +364,26 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.title-background {
+  background-color: rgba(229, 229, 224, 0.4);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-primary {
+  color: #1D809F;
+}
+
+.text-secondary {
+  color: #ecb807;
+}
+
+.hide {
+  visibility: hidden;
 }
