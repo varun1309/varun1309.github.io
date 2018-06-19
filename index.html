@@ -23,11 +23,12 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
+    <!-- Circle CSS-->
+    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
 
   </head>
 
@@ -48,7 +49,7 @@
           <a class="js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#interests">Interests</a>
+          <a class="js-scroll-trigger" href="#Skills">Skills</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#projects">Projects</a>
@@ -70,12 +71,29 @@
         <h4 class="mb-5">
           <span class="title-background">Email: <span class="text-secondary">varun@vsrivastava.com</span></span>
         </h4>
+        <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/varun1309/" target="none">
+                <i class="icon-social-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://facebook.com/varun1309" target="none">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="https://github.com/varun1309" target="none">
+                <i class="icon-social-github"></i>
+              </a>
+            </li>
+          </ul>
         <div class="row">
           <div class="col-lg-3 mt-1">
             <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#about">About Me!</a>
           </div>
           <div class="col-lg-3 mt-1">
-            <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#interests">Interests and skills</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#Skills">Technical Skills</a>
           </div>
           <div class="col-lg-3 mt-1">
             <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#projects">Projects</a>
@@ -115,56 +133,72 @@
               <br/>
               Awarded Accenture Celebrates Excellence for Q4 in 2016.
             </p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#interests">My interests!</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#Skills">Technical Skills!</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- interests -->
-    <section class="content-section bg-primary text-white text-center" id="interests">
+    <!-- Skills -->
+    <section class="content-section bg-primary text-white text-center" id="Skills">
       <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                
+            </div>
+        </div>
         <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Interests</h3>
-          <h2 class="mb-5">My interests</h2>
+          <h3 class="text-secondary mb-0">Skills</h3>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
-            </span>
+              <div id="full-stack-circle"></div>
             <h4>
-              <strong>Icon 1</strong>
+              <strong>Software Development</strong>
             </h4>
-            <p class="text-faded mb-0">Interest 1!</p>
+            <p class="text-faded mb-0">Algorithms, Data Structures, J2EE, Mean</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
+              <div id="ds-circle"></div>
             <h4>
-              <strong>Icon 2</strong>
+              <strong>Data Science</strong>
             </h4>
-            <p class="text-faded mb-0">Interest 2.</p>
+            <p class="text-faded mb-0">AI, Deep Learning, Machine Learning, Big Data</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+              <div id="sql-circle"></div>
+            <h4>
+              <strong>SQL</strong>
+            </h4>
+            <p class="text-faded mb-0">MySQL, Oracle SQL</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
+              <div id="pl-circle"></div>
             <h4>
-              <strong>Icon 3</strong>
+              <strong>Programming Languages</strong>
             </h4>
-            <p class="text-faded mb-0">Interest 3
-              <i class="fa fa-heart"></i>!</p>
+            <p class="text-faded mb-0">Java, Python, PHP, JavaScript</p>
           </div>
           <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
+              <div id="web-circle"></div>
             <h4>
-              <strong>Icon 4</strong>
+              <strong>Web Development</strong>
             </h4>
-            <p class="text-faded mb-0">Interest 4</p>
+            <p class="text-faded mb-0">HTML5, CSS3, Bootstrap, Adobe CMS, Drupal</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div id="web-framework-circle"></div>
+            <h4>
+              <strong>Web Frameworks</strong>
+            </h4>
+            <p class="text-faded mb-0">Spring, Hibernate, Flask, CherryPy, Portlets</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div id="ds-framework-circle"></div>
+            <h4>
+              <strong>Data Science Frameworks</strong>
+            </h4>
+            <p class="text-faded mb-0">Numpy, ScyKit, MatPlotLib, Panda</p>
           </div>
         </div>
         <div class="row">
@@ -262,23 +296,23 @@
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://facebook.com/varun1309" target="none">
-              <i class="icon-social-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/varun1309/" target="none">
-              <i class="icon-social-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/varun1309" target="none">
-              <i class="icon-social-github"></i>
-            </a>
-          </li>
-        </ul>
+          <ul class="list-inline mb-5">
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/varun1309/" target="none">
+                  <i class="icon-social-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://facebook.com/varun1309" target="none">
+                  <i class="icon-social-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://github.com/varun1309" target="none">
+                  <i class="icon-social-github"></i>
+                </a>
+              </li>
+            </ul>
         <p class="text-muted small mb-0">My email: varun@vsrivastava.com</p>
         <h2>Message me</h2>
         <div class="row justify-content-center">
@@ -320,6 +354,9 @@
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- circle donut plot-->
+    <script src="js/jquery.circliful.min.js"></script>
 
     <script src="js/custom.js"></script>
 
