@@ -403,3 +403,8 @@ a:hover, a:focus, a:active {
 .hide {
   visibility: hidden;
 }
+
+.list-group-item.active {
+  background-color: #1D809F !important;
+  border-color: #1D809F !important;
+}

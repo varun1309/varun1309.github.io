@@ -18,3 +18,8 @@
 .hide{
     visibility: hidden;
 }
+
+.list-group-item.active{
+    background-color: $primary !important;
+    border-color: $primary !important; 
+}
