@@ -224,9 +224,9 @@
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
+          <h2 class="mb-5">List of Projects</h2>
         </div>
-        <div class="row no-gutters">
+        <!-- <div class="row no-gutters">
           <div class="col-lg-6">
             <a class="portfolio-item" href="#">
               <span class="caption">
@@ -271,6 +271,114 @@
               <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
             </a>
           </div>
+        </div> -->
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-weather-list" data-toggle="list" href="#list-weather" role="tab" aria-controls="weather">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Weather Monitor Application</h5>
+                  <!-- <small>3 days ago</small> -->
+                </div>
+                <p class="mb-1">
+                  Web application for monitoring weather
+                </p>
+                <small>Personal project to learn modern js frameworks</small>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-foodie-list" data-toggle="list" href="#list-foodie" role="tab" aria-controls="foodie">
+                  <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Foodie Customer Review System</h5>
+                </div>
+                <p class="mb-1">A mobile review system architecture with interfaces for both admin and customer on mobile and web platforms.</p>
+                <small>Developed the system for this startup from scratch. Developed backend and front end by myself.</small>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-semantic-list" data-toggle="list" href="#list-semantic" role="tab" aria-controls="foodie">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Analyzing Safety Metrics of Major US Towns/Cities Using Semantic Web</h5>
+                </div>
+                <p class="mb-1">Used semantic web engineering to rank major US towns and cities based on their safety indices</p>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-linux-list" data-toggle="list" href="#list-linux" role="tab" aria-controls="linux">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Linux Process monitor</h5>
+                </div>
+                <p class="mb-1">Developed a loadable kernel module for linux OS to monitor the running processes</p>
+                <small>Developed this kernel to learn development of kernel modules in operating systems</small>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-zeal-list" data-toggle="list" href="#list-zeal" role="tab" aria-controls="zeal">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">ZEAL Programming Language</h5>
+                  </div>
+                  <p class="mb-1">Designed and developed a programming language with various data types and operations</p>
+                  <small>Used ANTLR to help parse program based on a BNF-like grammar.</small>
+                </a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-weather" role="tabpanel" aria-labelledby="list-weather-list">
+                <div class="jumbotron">
+                  <h1 class="display-4">Weather Monitor Application</h1>
+                  <p class="lead">Created an application using AngularJS, NodeJS, ExpressJs, and HTML5 to display and save weather information of any city/town/state on the browser.</p>
+                  <hr class="my-4">
+                  <p>Used API provided by open weather map to get weather information about the requested location.</p>
+                  <p>Used browser storage to save the location preference of the user to reload the weather information for that location even when the browser was closed.</p>
+                  <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="https://github.com/varun1309/WeatherMonitor" target="none" role="button">Learn more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-foodie" role="tabpanel" aria-labelledby="list-foodie-list">
+                <div class="jumbotron">
+                  <h1 class="display-4">Foodie Customer Review System</h1>
+                  <p class="lead">My role in this project was to solely implement the backend webservices, databases and the web application using java, Spring, Hibernate, JSP and jQuery. The webservices was used by an android application loaded on a tablet device to get data from customers.</p>
+                  <hr class="my-4">
+                  <p>This application was designed to allow hotel and restaurant owners to receive customer feedback data during billing. This data was then processed further to display critical insights for the business owners to understand which factors are working and which factors are not working for them. This approach allowed business owners to get the feedback from verified customers only, which was an improvement over the reviewing systems found on the internet like YELP.</p>
+                  <p>Some of the features I designed includes - User Authentication using hash and salt, restful APIs, statistics for the business owners using graph api, admin website for business owners to decide their customised questions for customers, etc.</p>
+
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-semantic" role="tabpanel" aria-labelledby="list-semantic-list">
+                <div class="jumbotron">
+                  <h1 class="display-4">Analyzing Safety Metrics of Major US Towns/Cities Using Semantic Web</h1>
+                  <p class="lead">Based on the data received from various government agencies regarding demography, education, crimes and federal expenditures, applied semantic web engineering to generate safety index of all major cities of US.</p>
+                  <hr class="my-4">
+                  <p>My tasks involved gathering historical data from sources like FBI, UCR, data.world, NCES, Census Bureau, etc. Then I designed a semantic data model with relationships between all the data columns using apache Jena framework to make the data more usable. After this the data was converted into RDF instances using this data model.</p>
+                  <p>These RDF instances were then served on an apache Fuseki server. This server was used to query the RDF data efficiently and provide a good estimate about safety index of cities along with providing insights on the socio-economic conditions which might affect the crime rates.</p>
+                  <p>Created an AngularJS based web app which allowed users to enter names of the US cities. Based on this, queried the Fuseki endpoint to display all the relevant information to the user.</p>
+                  <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="https://github.com/varun1309/crime" target="none" role="button">Learn more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-linux" role="tabpanel" aria-labelledby="list-linux-list">
+                <div class="jumbotron">
+                  <h1 class="display-4">Linux Process Monitor</h1>
+                  <p class="lead">Created a loadable kernel module which prints a list of all the running processes in Linux OS. Furthermore, it allowed sending process names or process id’s as arguments to display more information about the process, like the parent process or child processes.</p>
+                  <hr class="my-4">
+                  <p>Used the macros and data structures provided in the Linux source files to capture this data.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-zeal" role="tabpanel" aria-labelledby="list-zeal-list">
+                  <div class="jumbotron">
+                    <h1 class="display-4">ZEAL Programming Language</h1>
+                    <p class="lead">Designed and developed a programming language while keeping in mind the basic principles that goes into creating one.</p>
+                    <hr class="my-4">
+                    <p>Created a BNF-like grammar to define the programming language. Kept the syntax of the language easy while not compromising on the functionalities.</p>
+                    <p>Used ATNLR tool to parse the input program and generate a tree of tokens.</p>
+                    <p>Created two separate programs to interpret the input program and execute the interpreted code.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="https://github.com/varun1309/zeal-programming-language" target="none" role="button">Learn more</a>
+                      </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto" style="text-align: center">
+            <a class="btn btn-dark btn-xl mt-5 js-scroll-trigger btn-light" href="#contact">Contact me!</a>
+          </div>
         </div>
       </div>
     </section>
@@ -296,6 +404,10 @@
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
+          <div class="content-section-heading text-center">
+              <!-- <h3 class="text-secondary mb-0">Contact</h3> -->
+              <h2 class="mb-5">Contact Me</h2>
+            </div>
           <ul class="list-inline mb-5">
               <li class="list-inline-item">
                 <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/varun1309/" target="none">
@@ -314,7 +426,7 @@
               </li>
             </ul>
         <p class="text-muted small mb-0">My email: varun@vsrivastava.com</p>
-        <h2>Message me</h2>
+        <h4>Send me quick message:</h4>
         <div class="row justify-content-center">
           <form action="https://formspree.io/varun@vsrivastava.com" method="post" id="sendEmail" class="col-lg-4">
               <div class="form-group">
