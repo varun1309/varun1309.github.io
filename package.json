@@ -1,6 +1,6 @@
 {
   "title": "Varun Srivastava Portfolio",
-  "name": "varun-srivastava-portfolio",
+  "name": "portfolio",
   "version": "4.0.0",
   "description": "A stylish portfolio HTML template built with Bootstrap",
   "keywords": [
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/varun1309/varun1309.github.io"
+    "url": "git+https://github.com/varun1309/varun1309.github.io.git"
   },
   "dependencies": {
     "bootstrap": "4.0.0",
@@ -47,5 +47,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "3.0.0"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"No tests\" && exit 0"
   }
 }
