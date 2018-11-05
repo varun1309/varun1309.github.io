@@ -7,6 +7,6 @@ deploy:
   secret_access_key:
     secure: qpZW4gOIaSqFN2dBUHRp7ifUMdNJrzLzlTCHAZiS6VlQhFiJ5CxNWiPpVN98MmI9YRU7pvhEISe1106da4YFe9V2yyR3WR3uJGfNDEB3t8LccgciGWu/UBLMMs3h37qe9GE0Pb0ZOcN2yxeBwPwU+bI8ozwgDDdCy3yXabJ2vKcfr/veg9zD27A6KiLo1mJwdFiJAW+EaxIUE5h7tdBXcpfwVf6dNlWciehzlwmr0qvZy27FSKXvt5Fs+JzUTXKPsGLSf/GfkYuAuVr86gC6GBeMGFnDqhfBUhYLVGyDsfr7624xJiiLRWKZs+WYE9z3LPlY/ki/MeYkE9lnzaJHvsuKkMBP6VmyfRoxx8/MoUZHP8X1gRPTqFKszM4ZMshdYd++Q2mSKizGmrAW6voPXFb612rvwOv0dZEJkkm5vHJDqSZg1NxAdQl2S6ppRrg5KVm92/tvxq6cxQCKcInuwVZE45kyO1OrWqiKhbXkiiwCp4WHL0eplET9qtUonk4WWbX4WqzPaeYwFA/L+MWjACEBxw9l/mC0EC1jz0x40y63fdUk/o0CffInAmD/iLmX9o2rUEJftlam+Ji+F6R+GMTELtfsvaHkjXB3DeHw1wS1bY7r28nq35FKUblvVpzZOD6Qj8TFoTYrqS9jAIX7atqUKu6GdU5HLplekbGIMA8=
   bucket: www.vsrivastava.com
-  acl: ''
+  acl: 'public'
   on:
     repo: varun1309/varun1309.github.io
