@@ -1,0 +1,21 @@
+---
+layout: page
+title: Writing
+eyebrow: Blog
+standfirst: Notes and deep dives on whatever I have most recently taken apart.
+description: Notes and deep dives by Varun Srivastava.
+---
+
+{% if site.posts.size > 0 %}
+<div class="posts full">
+  {%- for post in site.posts %}
+  <a class="post-row" href="{{ post.url | relative_url }}">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    <h3>{{ post.title }}</h3>
+    {%- if post.standfirst %}<p>{{ post.standfirst }}</p>{% endif %}
+  </a>
+  {%- endfor %}
+</div>
+{% else %}
+<p>Nothing published yet.</p>
+{% endif %}

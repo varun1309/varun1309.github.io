@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="shell article">
+  <div class="article-head">
+    {%- if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {%- if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
+  </div>
+  <div class="article-body">
+    {{ content }}
+  </div>
+</div>

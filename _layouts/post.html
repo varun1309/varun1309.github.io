@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="shell article">
+  <div class="article-head">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    <h1>{{ page.title }}</h1>
+    {%- if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
+  </div>
+
+  <div class="article-body{% if page.embed %} embed{% endif %}">
+    {{ content }}
+  </div>
+
+  <p class="article-foot">
+    <a href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
+  </p>
+</article>

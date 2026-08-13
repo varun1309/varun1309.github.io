@@ -1,7 +1,62 @@
-# Varun Srivastava [![Build Status](https://travis-ci.com/varun1309/varun1309.github.io.svg?branch=master)](https://travis-ci.com/varun1309/varun1309.github.io)
+# vsrivastava.com
 
-Code released under the [MIT](https://github.com/varun1309/varun1309.github.io/blob/master/LICENSE) license.
+Personal site of Varun Srivastava. A static [Jekyll](https://jekyllrb.com) site
+served by GitHub Pages at [vsrivastava.com](https://vsrivastava.com).
 
-Visit the website at: https://varun1309.github.io
+No CSS or JS framework: one hand-written stylesheet, no build step for the
+front end, and no client-side JavaScript at all.
 
-Thanks!
+## Running it locally
+
+```bash
+bundle install
+bundle exec jekyll serve   # http://localhost:4000
+```
+
+Needs Ruby 3.0 or newer. The macOS system Ruby (2.6) is too old — install a
+current one with `brew install ruby` or `rbenv`.
+
+## Layout
+
+```
+_config.yml                 site config
+_layouts/                   default, page, post
+_includes/                  head, site-header, site-footer
+_posts/                     one file per post
+assets/css/main.css         the whole stylesheet
+assets/img/                 images
+index.html                  home page
+blog/index.html             post index
+tools/                      one-off scripts, excluded from the build
+```
+
+## Adding a post
+
+Drop a file in `_posts/` named `YYYY-MM-DD-slug.md`:
+
+```markdown
+---
+title: "Post title"
+standfirst: >-
+  One or two sentences shown under the title and in the post list.
+---
+
+Body in Markdown.
+```
+
+`layout: post` is applied automatically. Posts appear on `/blog/` and in the
+Writing section of the home page without any further wiring.
+
+### Posts that bring their own stylesheet
+
+A post that ships a complete self-contained design (the A-4E-C guide, for
+example) sets `embed: true` in its front matter, which drops the article's
+reading-measure constraint. Such a post must scope its own CSS so it cannot
+collide with `main.css`: prefix every custom property, and nest every selector
+under a wrapper class. `tools/build_post.py` shows how that transformation was
+done for the A-4E-C post.
+
+## Licence
+
+Code released under the [MIT](LICENSE) licence. Site content and images are not
+covered by that licence.
