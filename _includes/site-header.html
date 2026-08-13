@@ -1,0 +1,12 @@
+<header class="site-head">
+  <div class="site-head-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">Varun Srivastava</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="{{ '/#about' | relative_url }}">About</a>
+      <a href="{{ '/#skills' | relative_url }}">Skills</a>
+      <a href="{{ '/#projects' | relative_url }}">Projects</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} aria-current="page"{% endif %}>Writing</a>
+      <a href="{{ '/#contact' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>

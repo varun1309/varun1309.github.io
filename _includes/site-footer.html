@@ -1,0 +1,11 @@
+<footer class="site-foot">
+  <div class="shell site-foot-inner">
+    <span>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</span>
+    <nav class="foot-links" aria-label="Elsewhere">
+      <a href="https://github.com/{{ site.social.github }}" rel="me noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" rel="me noopener">LinkedIn</a>
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </nav>
+  </div>
+</footer>

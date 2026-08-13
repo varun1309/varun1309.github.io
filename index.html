@@ -1,497 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Varun Srivastava
+---
 
-  <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?">
-    <link rel="manifest" href="/site.webmanifest?">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Varun Srivastava. Hello, I am a software engineering 
-      student at Arizona State University. I am interested in software development roles and 
-      data science opportunities. I have 4+ years of experience working as application developer 
-      at Accenture Services. For more information, visit https://linkedin.com/in/varun1309. Also visit
-      https://github.com/varun1309. My personal website - http://vsrivastava.com. My email - varun091137ece@gmail.com. Please contact me on this site
-      for my resume and references. Thansk.">
-    <meta name="author" content="Varun Srivastava (varun091137ece@gmail.com)">
-    
-    <title>Varun Srivastava</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Circle CSS-->
-    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-  </head>
-
-  <body id="page-top">
-    <!-- Navigation -->
-    <a class="menu-toggle rounded" href="#">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Varun Srivastava</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#Skills">Skills</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#projects">Projects</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead d-flex">
-      <div class="container text-center my-auto">
-        <div class="image-cover">
-          <img id="circle-image" src="img/varun_alaska_small.jpeg">
-
-        </div>
-        <h1 class="mb-3"><span class="title-background"><span class="text-primary">Varun</span> Srivastava</span></h1>
-        <h3 class="mb-2">
-          <span class="title-background"><em>Software Developer, GoDaddy</em></span>
-        </h3>
-        <h3 class="mb-2">
-          <span class="title-background"><em>MS, Software Engineering, Arizona State University</em></span>
-        </h3>
-        <h4 class="mb-5">
-          <span class="title-background"><i class="icon-envelope"></i> <span class="email">varun091137ece@gmail.com</span></span>
-        </h4>
-        <ul class="list-inline mb-5">
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/varun1309/" target="none">
-                <i class="icon-social-linkedin"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="https://facebook.com/varun1309" target="none">
-                <i class="icon-social-facebook"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white" href="https://github.com/varun1309" target="none">
-                <i class="icon-social-github"></i>
-              </a>
-            </li>
-          </ul>
-        <div class="row">
-          <div class="col-lg-3 mt-1">
-            <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#about">About Me!</a>
-          </div>
-          <div class="col-lg-3 mt-1">
-            <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#Skills">Technical Skills</a>
-          </div>
-          <div class="col-lg-3 mt-1">
-            <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#projects">Projects</a>
-          </div>
-          <div class="col-lg-3 mt-1">
-            <a class="btn btn-primary btn-xl js-scroll-trigger btn-block" href="#contact">Contact me</a>
-          </div>
-        </div>
+<section class="hero">
+  <div class="shell hero-grid">
+    <img class="avatar" src="{{ '/assets/img/varun.webp' | relative_url }}" width="132" height="132"
+         alt="Varun Srivastava" fetchpriority="high">
+    <div>
+      <h1>Varun Srivastava</h1>
+      <p class="hero-role"><strong>Software Developer</strong> at GoDaddy</p>
+      <p class="hero-sub">MS, Software Engineering &mdash; Arizona State University</p>
+      <p class="hero-intro">
+        I build and operate backend systems, and I like the parts of the job where
+        you have to go read the source to find out what is actually happening.
+        Occasionally I write up whatever I have most recently taken apart.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ '/blog/' | relative_url }}">Read the writing</a>
+        <a class="btn" href="https://github.com/{{ site.social.github }}" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" rel="noopener">LinkedIn</a>
       </div>
-      <div class="overlay"></div>
-    </header>
+    </div>
+  </div>
+</section>
 
-    <!-- About -->
-    <section class="content-section bg-light" id="about">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1>About Me!</h1>
-            <p class="text-paragraph my-5 text-left">
-              I am a graduate student pursuing Masters of Science in Computer Software Engineering in Arizona State University, Tempe. My focus area includes Advanced Algorithms and Data Structures, Programming Languages Principles, Applications and Techniques of Deep Learning, Natural Language Processing, Semantic Web Engineering, software patterns, and project management techniques.
-            </p>
-            <p class="text-paragraph mb-5 text-left">
-              I work as a part time web developer for the global outreach and extended education department of the Arizona state University, Tempe, while doing my masters.
-            </p>
-            <p class="text-paragraph mb-5 text-left">
-              Before starting my graduate studies, I was working as a senior software developer in Accenture Services, Gurgaon, as a full stack application developer. My role there was to design, develop, test, and deploy highly scalable and optimised java based applications for customers in Telecom industry, Media industry, and Public Services. I got the opportunity to research and perform POCs on a variety of technologies to improve the products' quality and the development process.
-            </p>
-            <p class="text-paragraph mb-5 text-left">
-              I have done my bachelors in Electronics and communication with my focus area being signal processing, and FIR and IIR filters optimization.
-            </p>
-            <p class="text-paragraph mb-5 text-left">
-              In my free time I like to read research papers, explore new open source projects on github, and do online courses on coursera and udemy. On weekends, I love doing hiking and cycling.
-            </p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#Skills">Technical Skills!</a>
-          </div>
-        </div>
+<!-- ---------------------------------------------------------------- About -->
+<section class="section" id="about">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>A bit of background</h2>
+    </div>
+    <div class="prose">
+      <p>
+        I work as a software developer at GoDaddy. Before that I completed a Master of
+        Science in Computer Software Engineering at Arizona State University, Tempe,
+        where I focused on advanced algorithms and data structures, programming language
+        principles, applications and techniques of deep learning, natural language
+        processing, semantic web engineering, software patterns, and project management.
+      </p>
+      <p>
+        While studying I also worked part time as a web developer for ASU's Global
+        Outreach and Extended Education department.
+      </p>
+      <p>
+        Before graduate school I was a senior software developer at Accenture Services in
+        Gurgaon, working as a full stack application developer. I designed, built, tested
+        and deployed scalable Java applications for customers in telecom, media and public
+        services, and had the chance to research and prototype a range of technologies to
+        improve both product quality and the development process itself.
+      </p>
+      <p>
+        My bachelor's is in electronics and communication, where I focused on signal
+        processing and the optimisation of FIR and IIR filters.
+      </p>
+      <p>
+        Outside work I read research papers, dig through open source projects on GitHub,
+        and take online courses. On weekends I am usually hiking or cycling.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- --------------------------------------------------------------- Skills -->
+<section class="section" id="skills">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Skills</p>
+      <h2>What I work with</h2>
+    </div>
+    <div class="skill-grid">
+      <div class="skill">
+        <h3>Software development</h3>
+        <ul class="tags">
+          <li>Algorithms</li><li>Data structures</li><li>J2EE</li><li>MEAN</li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="content-section bg-primary text-white text-center" id="Skills">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
-                
-            </div>
-        </div>
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Skills</h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <div id="full-stack-circle" class="circle-graph"></div>
-            <h4>
-              <strong>Software Development</strong>
-            </h4>
-            <p class="text-faded mb-0">Algorithms, Data Structures, J2EE, Mean</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <div id="ds-circle" class="circle-graph"></div>
-            <h4>
-              <strong>Data Science</strong>
-            </h4>
-            <p class="text-faded mb-0">AI, Deep Learning, Machine Learning, Big Data</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <div id="sql-circle" class="circle-graph"></div>
-            <h4>
-              <strong>SQL</strong>
-            </h4>
-            <p class="text-faded mb-0">MySQL, Oracle SQL</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-              <div id="pl-circle" class="circle-graph"></div>
-            <h4>
-              <strong>Programming Languages</strong>
-            </h4>
-            <p class="text-faded mb-0">Java, Python, PHP, JavaScript, C, C++</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <div id="web-circle" class="circle-graph"></div>
-            <h4>
-              <strong>Web Development</strong>
-            </h4>
-            <p class="text-faded mb-0">HTML5, CSS3, Bootstrap, Adobe CMS, Drupal</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <div id="web-framework-circle" class="circle-graph"></div>
-            <h4>
-              <strong>Web Frameworks</strong>
-            </h4>
-            <p class="text-faded mb-0">Spring, Hibernate, Flask, CherryPy, Portlets</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-              <div id="ds-framework-circle" class="circle-graph"></div>
-            <h4>
-              <strong>Data Science Frameworks</strong>
-            </h4>
-            <p class="text-faded mb-0">Numpy, ScyKit, MatPlotLib, Panda</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <a class="btn btn-dark btn-xl mt-5 js-scroll-trigger btn-light" href="#projects">My personal projects!</a>
-          </div>
-        </div>
+      <div class="skill">
+        <h3>Programming languages</h3>
+        <ul class="tags">
+          <li>Java</li><li>Python</li><li>JavaScript</li><li>PHP</li><li>C</li><li>C++</li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Callout -->
-    <!-- <section class="callout">
-      <div class="container text-center">
-        <h2 class="mx-auto mb-5">Welcome to
-          <em>your</em>
-          next website!</h2>
-        <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
+      <div class="skill">
+        <h3>Web frameworks</h3>
+        <ul class="tags">
+          <li>Spring</li><li>Hibernate</li><li>Flask</li><li>CherryPy</li><li>Portlets</li>
+        </ul>
       </div>
-    </section> -->
-
-    <!-- Portfolio -->
-    <section class="content-section" id="projects">
-      <div class="container">
-        <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Personal & Academic Projects</h2>
-        </div>
-        <!-- <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Stationary</h2>
-                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Strawberries</h2>
-                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Workspace</h2>
-                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-            </a>
-          </div>
-        </div> -->
-        <div class="row">
-          <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-              <a class="list-group-item list-group-item-action active" id="list-weather-list" data-toggle="list" href="#list-weather" role="tab" aria-controls="weather">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Weather Monitor Application</h5>
-                  <!-- <small>3 days ago</small> -->
-                </div>
-                <p class="mb-1">
-                  Web application for monitoring weather
-                </p>
-                <small>Personal project to learn modern js frameworks</small>
-              </a>
-              <a class="list-group-item list-group-item-action" id="list-foodie-list" data-toggle="list" href="#list-foodie" role="tab" aria-controls="foodie">
-                  <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Foodie Customer Review System</h5>
-                </div>
-                <p class="mb-1">A mobile review system architecture with interfaces for both admin and customer on mobile and web platforms.</p>
-                <small>Developed the system for this startup from scratch. Developed backend and front end by myself.</small>
-              </a>
-              <a class="list-group-item list-group-item-action" id="list-semantic-list" data-toggle="list" href="#list-semantic" role="tab" aria-controls="foodie">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Analyzing Safety Metrics of Major US Towns/Cities Using Semantic Web</h5>
-                </div>
-                <p class="mb-1">Used semantic web engineering to rank major US towns and cities based on their safety indices</p>
-              </a>
-              <a class="list-group-item list-group-item-action" id="list-linux-list" data-toggle="list" href="#list-linux" role="tab" aria-controls="linux">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Linux Process monitor</h5>
-                </div>
-                <p class="mb-1">Developed a loadable kernel module for linux OS to monitor the running processes</p>
-                <small>Developed this kernel to learn development of kernel modules in operating systems</small>
-              </a>
-              <a class="list-group-item list-group-item-action" id="list-zeal-list" data-toggle="list" href="#list-zeal" role="tab" aria-controls="zeal">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">ZEAL Programming Language</h5>
-                  </div>
-                  <p class="mb-1">Designed and developed a programming language with various data types and operations</p>
-                  <small>Used ANTLR to help parse program based on a BNF-like grammar.</small>
-                </a>
-            </div>
-          </div>
-          <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="list-weather" role="tabpanel" aria-labelledby="list-weather-list">
-                <div class="jumbotron">
-                  <h1 class="display-4">Weather Monitor Application</h1>
-                  <p class="lead">Created an application using AngularJS, NodeJS, ExpressJs, and HTML5 to display and save weather information of any city/town/state on the browser.</p>
-                  <hr class="my-4">
-                  <p>Used API provided by open weather map to get weather information about the requested location.</p>
-                  <p>Used browser storage to save the location preference of the user to reload the weather information for that location even when the browser was closed.</p>
-                  <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="https://github.com/varun1309/WeatherMonitor" target="none" role="button">Learn more</a>
-                  </p>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="list-foodie" role="tabpanel" aria-labelledby="list-foodie-list">
-                <div class="jumbotron">
-                  <h1 class="display-4">Foodie Customer Review System</h1>
-                  <p class="lead">My role in this project was to solely implement the backend webservices, databases and the web application using java, Spring, Hibernate, JSP and jQuery. The webservices was used by an android application loaded on a tablet device to get data from customers.</p>
-                  <hr class="my-4">
-                  <p>This application was designed to allow hotel and restaurant owners to receive customer feedback data during billing. This data was then processed further to display critical insights for the business owners to understand which factors are working and which factors are not working for them. This approach allowed business owners to get the feedback from verified customers only, which was an improvement over the reviewing systems found on the internet like YELP.</p>
-                  <p>Some of the features I designed includes - User Authentication using hash and salt, restful APIs, statistics for the business owners using graph api, admin website for business owners to decide their customised questions for customers, etc.</p>
-
-                </div>
-              </div>
-              <div class="tab-pane fade" id="list-semantic" role="tabpanel" aria-labelledby="list-semantic-list">
-                <div class="jumbotron">
-                  <h1 class="display-4">Analyzing Safety Metrics of Major US Towns/Cities Using Semantic Web</h1>
-                  <p class="lead">Based on the data received from various government agencies regarding demography, education, crimes and federal expenditures, applied semantic web engineering to generate safety index of all major cities of US.</p>
-                  <hr class="my-4">
-                  <p>My tasks involved gathering historical data from sources like FBI, UCR, data.world, NCES, Census Bureau, etc. Then I designed a semantic data model with relationships between all the data columns using apache Jena framework to make the data more usable. After this the data was converted into RDF instances using this data model.</p>
-                  <p>These RDF instances were then served on an apache Fuseki server. This server was used to query the RDF data efficiently and provide a good estimate about safety index of cities along with providing insights on the socio-economic conditions which might affect the crime rates.</p>
-                  <p>Created an AngularJS based web app which allowed users to enter names of the US cities. Based on this, queried the Fuseki endpoint to display all the relevant information to the user.</p>
-                  <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="https://github.com/varun1309/crime" target="none" role="button">Learn more</a>
-                  </p>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="list-linux" role="tabpanel" aria-labelledby="list-linux-list">
-                <div class="jumbotron">
-                  <h1 class="display-4">Linux Process Monitor</h1>
-                  <p class="lead">Created a loadable kernel module which prints a list of all the running processes in Linux OS. Furthermore, it allowed sending process names or process id’s as arguments to display more information about the process, like the parent process or child processes.</p>
-                  <hr class="my-4">
-                  <p>Used the macros and data structures provided in the Linux source files to capture this data.</p>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="list-zeal" role="tabpanel" aria-labelledby="list-zeal-list">
-                  <div class="jumbotron">
-                    <h1 class="display-4">ZEAL Programming Language</h1>
-                    <p class="lead">Designed and developed a programming language while keeping in mind the basic principles that goes into creating one.</p>
-                    <hr class="my-4">
-                    <p>Created a BNF-like grammar to define the programming language. Kept the syntax of the language easy while not compromising on the functionalities.</p>
-                    <p>Used ATNLR tool to parse the input program and generate a tree of tokens.</p>
-                    <p>Created two separate programs to interpret the input program and execute the interpreted code.</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="https://github.com/varun1309/zeal-programming-language" target="none" role="button">Learn more</a>
-                      </p>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-10 mx-auto" style="text-align: center">
-            <a class="btn btn-dark btn-xl mt-5 js-scroll-trigger btn-light" href="#contact">Contact me!</a>
-          </div>
-        </div>
+      <div class="skill">
+        <h3>Web development</h3>
+        <ul class="tags">
+          <li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>Adobe CMS</li><li>Drupal</li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Call to Action -->
-    <!-- <section class="content-section bg-primary text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      <div class="skill">
+        <h3>Databases</h3>
+        <ul class="tags">
+          <li>MySQL</li><li>Oracle SQL</li>
+        </ul>
       </div>
-    </section> -->
-
-    <!-- Map -->
-     <section id="contact" class="container hide">
-      <div class="carousel-div">
-        <div>your content</div>
-        <div>your content</div>
+      <div class="skill">
+        <h3>Data science</h3>
+        <ul class="tags">
+          <li>AI</li><li>Deep learning</li><li>Machine learning</li><li>Big data</li>
+        </ul>
       </div>
-      
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-          <div class="content-section-heading text-center">
-              <!-- <h3 class="text-secondary mb-0">Contact</h3> -->
-              <h2 class="mb-5">Contact Me</h2>
-            </div>
-          <ul class="list-inline mb-5">
-              <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/varun1309/" target="none">
-                  <i class="icon-social-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" href="https://facebook.com/varun1309" target="none">
-                  <i class="icon-social-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="https://github.com/varun1309" target="none">
-                  <i class="icon-social-github"></i>
-                </a>
-              </li>
-            </ul>
-        <p class="text-muted small mb-0">My email: varun091137ece@gmail.com</p>
-        <h4>Send me quick message:</h4>
-        <div class="row justify-content-center">
-          <form action="https://formspree.io/varun091137ece@gmail.com" method="post" id="sendEmail" class="col-lg-4">
-              <div class="form-group">
-                <!-- <label for="name">Subject:</label> -->
-                <input type="text" class="form-control" id="name" placeholder="Subject" name="_subject">
-              </div>
-              <div class="form-group">
-                <!-- <label for="email">Email:</label> -->
-                <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="_replyto">
-              </div>
-              <div class="form-group">
-                <!-- <label for="comments">Message:</label> -->
-                <textarea class="form-control" id="comments" placeholder="Enter message" name="comments"></textarea>
-              </div>
-              <input type="text" name="_gotcha" style="display:none">
-              
-              <button type="submit" name="send" class="btn btn-default">Send!</button>
-              <!-- The confirmation page once mail is sent -->
-              <input type="hidden" name="_next" value="http://vsrivastava.com/thanks.html"/>
-            </form>
-        </div>
+      <div class="skill">
+        <h3>Data science frameworks</h3>
+        <ul class="tags">
+          <li>NumPy</li><li>scikit-learn</li><li>Matplotlib</li><li>pandas</li>
+        </ul>
       </div>
-    </footer>
+    </div>
+  </div>
+</section>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
+<!-- ------------------------------------------------------------- Projects -->
+<section class="section" id="projects">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Personal &amp; academic projects</h2>
+      <p>Expand any project for the detail on what I actually built.</p>
+    </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="projects">
+      <div class="project">
+        <h3>Weather Monitor Application</h3>
+        <p class="lede">A web application for monitoring weather &mdash; a personal project to learn modern JavaScript frameworks.</p>
+        <details>
+          <summary>What I built</summary>
+          <p>
+            Built with AngularJS, Node.js, Express and HTML5 to display and save weather
+            information for any city, town or state in the browser. Weather data comes from
+            the OpenWeatherMap API.
+          </p>
+          <p>
+            Used browser storage to persist the user's location preference, so the weather
+            for that location reloads even after the browser has been closed.
+          </p>
+        </details>
+        <p class="project-foot">
+          <a href="https://github.com/varun1309/WeatherMonitor" rel="noopener">Source on GitHub &rarr;</a>
+        </p>
+      </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <div class="project">
+        <h3>Foodie Customer Review System</h3>
+        <p class="lede">A mobile review system with interfaces for both administrators and customers, on mobile and web. I built the system for this startup from scratch, backend and frontend.</p>
+        <details>
+          <summary>What I built</summary>
+          <p>
+            I implemented the backend web services, databases and web application using Java,
+            Spring, Hibernate, JSP and jQuery. Those services were consumed by an Android
+            application running on a tablet, which collected data directly from customers.
+          </p>
+          <p>
+            The system let hotel and restaurant owners capture customer feedback at the point
+            of billing, then processed it into insights showing which factors were and were not
+            working for the business. Because feedback came in during billing, owners heard only
+            from verified customers &mdash; an improvement over open review platforms like Yelp.
+          </p>
+          <p>
+            Features I designed include user authentication using hash and salt, REST APIs,
+            statistics for business owners via a graph API, and an admin site where owners could
+            choose the questions their customers were asked.
+          </p>
+        </details>
+      </div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <div class="project">
+        <h3>Analyzing Safety Metrics of Major US Towns and Cities Using Semantic Web</h3>
+        <p class="lede">Applied semantic web engineering to rank major US towns and cities by a computed safety index, using open government data.</p>
+        <details>
+          <summary>What I built</summary>
+          <p>
+            Gathered historical data on demography, education, crime and federal expenditure
+            from sources including the FBI, UCR, data.world, NCES and the Census Bureau.
+          </p>
+          <p>
+            Designed a semantic data model relating those data columns using the Apache Jena
+            framework, then converted the data into RDF instances against that model.
+          </p>
+          <p>
+            Served the RDF from an Apache Fuseki server, which made it efficient to query for a
+            safety index per city alongside insight into the socio-economic conditions that
+            might affect crime rates. An AngularJS front end let users type a US city name and
+            see the results.
+          </p>
+        </details>
+        <p class="project-foot">
+          <a href="https://github.com/varun1309/crime" rel="noopener">Source on GitHub &rarr;</a>
+        </p>
+      </div>
 
-    <!-- appear plugin-->
-    <script src="js/jquery.appear.js"></script>
+      <div class="project">
+        <h3>Linux Process Monitor</h3>
+        <p class="lede">A loadable kernel module for Linux that reports on running processes &mdash; written to learn how kernel modules are actually built.</p>
+        <details>
+          <summary>What I built</summary>
+          <p>
+            The module prints a list of all running processes. It also accepts a process name or
+            PID as an argument and reports more detail about that process, including its parent
+            and children.
+          </p>
+          <p>
+            Built on the macros and data structures provided by the Linux source itself to
+            capture the data.
+          </p>
+        </details>
+      </div>
 
-    <!-- circle donut plot-->
-    <script src="js/jquery.circliful.min.js"></script>
+      <div class="project">
+        <h3>ZEAL Programming Language</h3>
+        <p class="lede">Designed and implemented a programming language with its own data types and operations, keeping to the basic principles of language design.</p>
+        <details>
+          <summary>What I built</summary>
+          <p>
+            Wrote a BNF-like grammar to define the language, aiming for syntax that stayed easy
+            to read without giving up functionality.
+          </p>
+          <p>
+            Used ANTLR to parse an input program into a token tree, then wrote two separate
+            programs &mdash; one to interpret the parsed program and one to execute the
+            interpreted code.
+          </p>
+        </details>
+        <p class="project-foot">
+          <a href="https://github.com/varun1309/zeal-programming-language" rel="noopener">Source on GitHub &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="js/custom.js"></script>
+<!-- -------------------------------------------------------------- Writing -->
+<section class="section" id="writing">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Writing</p>
+      <h2>Notes and deep dives</h2>
+    </div>
+    {% if site.posts.size > 0 %}
+    <div class="posts">
+      {%- for post in site.posts limit: 4 %}
+      <a class="post-row" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+        <h3>{{ post.title }}</h3>
+        {%- if post.standfirst %}<p>{{ post.standfirst }}</p>{% endif %}
+      </a>
+      {%- endfor %}
+    </div>
+    {%- if site.posts.size > 4 %}
+    <p class="all-posts"><a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a></p>
+    {%- endif %}
+    {% else %}
+    <p class="prose">Nothing published yet.</p>
+    {% endif %}
+  </div>
+</section>
 
-
-
-  </body>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel-div').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-    });
-  </script>
-
-</html>
+<!-- -------------------------------------------------------------- Contact -->
+<section class="section" id="contact">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+      <p>Email is the most reliable way to reach me.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">GitHub</span>
+        <a href="https://github.com/{{ site.social.github }}" rel="noopener">github.com/{{ site.social.github }}</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" rel="noopener">linkedin.com/in/{{ site.social.linkedin }}</a>
+      </div>
+    </div>
+  </div>
+</section>

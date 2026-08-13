@@ -1,0 +1,48 @@
+title: Varun Srivastava
+tagline: Software Developer at GoDaddy
+description: >-
+  Personal site of Varun Srivastava — Software Developer at GoDaddy, MS in
+  Software Engineering from Arizona State University. Projects, and notes on
+  whatever I'm currently taking apart.
+url: "https://vsrivastava.com"
+baseurl: ""
+
+author: Varun Srivastava
+email: varun091137ece@gmail.com
+lang: en
+
+social:
+  github: varun1309
+  linkedin: varun1309
+
+# Posts live at /blog/<title>/
+permalink: /blog/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - _preview
+  - tools
+  - vendor
+  - .jekyll-cache

@@ -1,3 +1,12 @@
 .DS_Store
 node_modules
 settings.json
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# local preview output (see tools/preview.rb)
+_preview/
