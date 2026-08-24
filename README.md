@@ -27,7 +27,8 @@ assets/css/main.css         the whole stylesheet
 assets/img/                 images
 index.html                  home page
 blog/index.html             post index
-tools/                      one-off scripts, excluded from the build
+tools/                      scripts, excluded from the build
+tools/a4e/                  regenerates the A-4E-C post from a DCS export
 ```
 
 ## Adding a post
@@ -55,6 +56,13 @@ reading-measure constraint. Such a post must scope its own CSS so it cannot
 collide with `main.css`: prefix every custom property, and nest every selector
 under a wrapper class. `tools/build_post.py` shows how that transformation was
 done for the A-4E-C post.
+
+### Generated posts
+
+The A-4E-C post's diagrams and HOTAS tables are generated from JSON under
+`tools/a4e/data/`, with the keybind layers driven by a DCS input export. Four
+marker-fenced regions of the post are rewritten by `tools/a4e/build.py`;
+everything outside them is hand-written. See `tools/a4e/README.md`.
 
 ## Licence
 

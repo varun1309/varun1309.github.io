@@ -1,0 +1,293 @@
+{
+  "viewBox": "0 0 880 380",
+  "aria": "Flow diagram: the APN-153 doppler feeds ground speed and drift to the ASN-41 navigation computer, which you also load with present position, magnetic variation and wind. The ASN-41, the TACAN, and the ADF all feed a BDHI selector switch, which passes only one source at a time to the BDHI needle and distance drum.",
+  "marker": "a4ea2",
+  "nodes": [
+    {
+      "x": 256.0,
+      "y": 16.0,
+      "w": 200.0,
+      "h": 62.0,
+      "family": null,
+      "emph": false,
+      "dashed": true,
+      "opacity": "0.05",
+      "lines": [
+        {
+          "text": "PRESENT POSITION",
+          "dx": 12.0,
+          "dy": 20.0,
+          "opacity": null,
+          "size": null
+        },
+        {
+          "text": "MAG VARIATION",
+          "dx": 12.0,
+          "dy": 36.0,
+          "opacity": null,
+          "size": null
+        },
+        {
+          "text": "WIND SPD / DIR",
+          "dx": 12.0,
+          "dy": 52.0,
+          "opacity": null,
+          "size": null
+        }
+      ]
+    },
+    {
+      "x": 16.0,
+      "y": 140.0,
+      "w": 170.0,
+      "h": 60.0,
+      "family": "nav",
+      "emph": false,
+      "dashed": false,
+      "opacity": "0.12",
+      "lines": [
+        {
+          "text": "AN/APN-153",
+          "dx": 12.0,
+          "dy": 26.0,
+          "opacity": null,
+          "size": null
+        },
+        {
+          "text": "doppler radar",
+          "dx": 12.0,
+          "dy": 44.0,
+          "opacity": "0.7",
+          "size": null
+        }
+      ]
+    },
+    {
+      "x": 256.0,
+      "y": 126.0,
+      "w": 200.0,
+      "h": 88.0,
+      "family": "nav",
+      "emph": true,
+      "dashed": false,
+      "opacity": "0.22",
+      "lines": [
+        {
+          "text": "AN/ASN-41",
+          "dx": 12.0,
+          "dy": 26.0,
+          "opacity": null,
+          "size": null
+        },
+        {
+          "text": "nav computer",
+          "dx": 12.0,
+          "dy": 44.0,
+          "opacity": "0.75",
+          "size": null
+        },
+        {
+          "text": "dest. D1 / D2",
+          "dx": 12.0,
+          "dy": 70.0,
+          "opacity": "0.75",
+          "size": null
+        }
+      ]
+    },
+    {
+      "x": 256.0,
+      "y": 258.0,
+      "w": 200.0,
+      "h": 44.0,
+      "family": "nav",
+      "emph": false,
+      "dashed": false,
+      "opacity": "0.12",
+      "lines": [
+        {
+          "text": "AN/ARN-52 TACAN",
+          "dx": 12.0,
+          "dy": 27.0,
+          "opacity": null,
+          "size": null
+        }
+      ]
+    },
+    {
+      "x": 256.0,
+      "y": 318.0,
+      "w": 200.0,
+      "h": 44.0,
+      "family": "com",
+      "emph": false,
+      "dashed": false,
+      "opacity": "0.12",
+      "lines": [
+        {
+          "text": "ADF (on UHF radio)",
+          "dx": 12.0,
+          "dy": 27.0,
+          "opacity": null,
+          "size": null
+        }
+      ]
+    },
+    {
+      "x": 520.0,
+      "y": 130.0,
+      "w": 180.0,
+      "h": 120.0,
+      "family": "flt",
+      "emph": true,
+      "dashed": false,
+      "opacity": "0.18",
+      "lines": [
+        {
+          "text": "BDHI SELECTOR",
+          "dx": 12.0,
+          "dy": 22.0,
+          "opacity": null,
+          "size": null
+        },
+        {
+          "text": "NAVPAC",
+          "dx": 12.0,
+          "dy": 46.0,
+          "opacity": "0.8",
+          "size": null
+        },
+        {
+          "text": "TACAN",
+          "dx": 12.0,
+          "dy": 64.0,
+          "opacity": "0.8",
+          "size": null
+        },
+        {
+          "text": "NAVCMPTR",
+          "dx": 12.0,
+          "dy": 82.0,
+          "opacity": "0.8",
+          "size": null
+        },
+        {
+          "text": "on ARMAMENT #35",
+          "dx": 12.0,
+          "dy": 108.0,
+          "opacity": "0.6",
+          "size": "10"
+        }
+      ]
+    },
+    {
+      "x": 740.0,
+      "y": 150.0,
+      "w": 130.0,
+      "h": 80.0,
+      "family": null,
+      "emph": false,
+      "dashed": false,
+      "opacity": "0.06",
+      "lines": [
+        {
+          "text": "BDHI",
+          "dx": 12.0,
+          "dy": 30.0,
+          "opacity": null,
+          "size": null
+        },
+        {
+          "text": "needle +",
+          "dx": 12.0,
+          "dy": 48.0,
+          "opacity": "0.7",
+          "size": "10"
+        },
+        {
+          "text": "distance drum",
+          "dx": 12.0,
+          "dy": 62.0,
+          "opacity": "0.7",
+          "size": "10"
+        }
+      ]
+    }
+  ],
+  "arrows": [
+    {
+      "x1": 186.0,
+      "y1": 170.0,
+      "x2": 252.0,
+      "y2": 170.0
+    },
+    {
+      "x1": 356.0,
+      "y1": 78.0,
+      "x2": 356.0,
+      "y2": 122.0
+    },
+    {
+      "x1": 456.0,
+      "y1": 170.0,
+      "x2": 516.0,
+      "y2": 170.0
+    },
+    {
+      "x1": 456.0,
+      "y1": 280.0,
+      "x2": 516.0,
+      "y2": 240.0
+    },
+    {
+      "x1": 456.0,
+      "y1": 340.0,
+      "x2": 516.0,
+      "y2": 252.0
+    },
+    {
+      "x1": 700.0,
+      "y1": 190.0,
+      "x2": 736.0,
+      "y2": 190.0
+    }
+  ],
+  "arrowLabels": [
+    {
+      "text": "g/s + drift",
+      "x": 219.0,
+      "y": 162.0,
+      "anchor": "middle"
+    },
+    {
+      "text": "you enter",
+      "x": 364.0,
+      "y": 104.0,
+      "anchor": null
+    },
+    {
+      "text": "brg + dist",
+      "x": 486.0,
+      "y": 162.0,
+      "anchor": "middle"
+    },
+    {
+      "text": "brg + DME",
+      "x": 492.0,
+      "y": 272.0,
+      "anchor": null
+    },
+    {
+      "text": "brg only",
+      "x": 492.0,
+      "y": 316.0,
+      "anchor": null
+    },
+    {
+      "text": "one only",
+      "x": 718.0,
+      "y": 212.0,
+      "anchor": "middle"
+    }
+  ]
+}
