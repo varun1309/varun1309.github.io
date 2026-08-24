@@ -1,0 +1,833 @@
+{
+  "note": "One entry per physical VKB control. `input` is the join key against a DCS .lua; `box` shades the field when the control is unbound on a layer; `anchor` is the text baseline when it is bound.",
+  "image": {
+    "href": "/assets/img/vkb-gladiator-nxt-evo-template.jpg",
+    "id": "a4eevo",
+    "w": 3300,
+    "h": 2550
+  },
+  "layout": {
+    "sheetH": 2700,
+    "headerH": 104,
+    "imageDy": 150,
+    "fontSize": 26,
+    "letterSpacing": "0.5",
+    "ink": "#16180F",
+    "accent": "#8A5A0F",
+    "headBg": "#E7E5DD",
+    "headMuted": "#6A6D60",
+    "pairMaxChars": 14,
+    "shade": "0.055",
+    "heldShade": "0.20"
+  },
+  "rows": [
+    [
+      "throttle"
+    ],
+    [
+      "axis_x",
+      "axis_y",
+      "axis_z"
+    ],
+    [
+      "fire1"
+    ],
+    [
+      "fire2"
+    ],
+    [
+      "pov_u",
+      "pov_d"
+    ],
+    [
+      "pov_l",
+      "pov_r"
+    ],
+    [
+      "pov_ul"
+    ],
+    [
+      "a2"
+    ],
+    [
+      "b1"
+    ],
+    [
+      "d1"
+    ],
+    [
+      "a3_u",
+      "a3_d"
+    ],
+    [
+      "a3_l",
+      "a3_r"
+    ],
+    [
+      "a3_push"
+    ],
+    [
+      "a4_u",
+      "a4_d"
+    ],
+    [
+      "a4_l",
+      "a4_r"
+    ],
+    [
+      "a4_push"
+    ],
+    [
+      "c1_u",
+      "c1_d"
+    ],
+    [
+      "c1_l",
+      "c1_r"
+    ],
+    [
+      "c1_push"
+    ],
+    [
+      "en2_cw",
+      "en2_ccw"
+    ],
+    [
+      "en1_cw",
+      "en1_ccw"
+    ],
+    [
+      "f1"
+    ],
+    [
+      "f2",
+      "f3"
+    ]
+  ],
+  "controls": [
+    {
+      "id": "throttle",
+      "vkb": "Base analog wheel",
+      "input": "JOY_SLIDER1",
+      "button": "Alog",
+      "anchor": [
+        2395,
+        2255
+      ],
+      "box": [
+        2375,
+        2202,
+        347,
+        77
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "fire1",
+      "vkb": "Fire 1",
+      "input": "JOY_BTN1",
+      "button": "1",
+      "anchor": [
+        634,
+        1915
+      ],
+      "box": [
+        558,
+        1862,
+        347,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "fire2",
+      "vkb": "Fire 2",
+      "input": "JOY_BTN2",
+      "button": "2",
+      "anchor": [
+        510,
+        2007
+      ],
+      "box": [
+        434,
+        1954,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "pov_u",
+      "vkb": "POV &#8593;",
+      "input": "JOY_BTN_POV1_U",
+      "button": "&mdash;",
+      "anchor": [
+        600,
+        176
+      ],
+      "box": [
+        584,
+        111,
+        338,
+        81
+      ],
+      "boxFromTemplate": true,
+      "accent": false
+    },
+    {
+      "id": "pov_d",
+      "vkb": "POV &#8595;",
+      "input": "JOY_BTN_POV1_D",
+      "button": "&mdash;",
+      "anchor": [
+        600,
+        353
+      ],
+      "box": [
+        211,
+        285,
+        351,
+        92
+      ],
+      "boxFromTemplate": true,
+      "accent": false
+    },
+    {
+      "id": "pov_l",
+      "vkb": "POV &#8592;",
+      "input": "JOY_BTN_POV1_L",
+      "button": "&mdash;",
+      "anchor": [
+        234,
+        268
+      ],
+      "box": [
+        211,
+        192,
+        351,
+        92
+      ],
+      "boxFromTemplate": true,
+      "accent": false
+    },
+    {
+      "id": "pov_r",
+      "vkb": "POV &#8594;",
+      "input": "JOY_BTN_POV1_R",
+      "button": "&mdash;",
+      "anchor": [
+        965,
+        268
+      ],
+      "box": [
+        578,
+        192,
+        351,
+        92
+      ],
+      "boxFromTemplate": true,
+      "accent": false
+    },
+    {
+      "id": "pov_ul",
+      "vkb": "POV &#8598;",
+      "input": "JOY_BTN_POV1_UL",
+      "button": "&mdash;",
+      "anchor": [
+        234,
+        176
+      ],
+      "box": [
+        214,
+        115,
+        347,
+        89
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a2",
+      "vkb": "A2 (red)",
+      "input": "JOY_BTN3",
+      "button": "3",
+      "anchor": [
+        710,
+        747
+      ],
+      "box": [
+        634,
+        694,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "b1",
+      "vkb": "B1 SpeedFire",
+      "input": "JOY_BTN4",
+      "button": "4",
+      "anchor": [
+        873,
+        1523
+      ],
+      "box": [
+        797,
+        1470,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "d1",
+      "vkb": "D1",
+      "input": "JOY_BTN5",
+      "button": "5",
+      "anchor": [
+        1054,
+        1315
+      ],
+      "box": [
+        978,
+        1262,
+        346,
+        77
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a3_u",
+      "vkb": "A3 &#8593;",
+      "input": "JOY_BTN6",
+      "button": "6",
+      "anchor": [
+        2251,
+        570
+      ],
+      "box": [
+        2175,
+        517,
+        347,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a3_d",
+      "vkb": "A3 &#8595;",
+      "input": "JOY_BTN8",
+      "button": "8",
+      "anchor": [
+        2251,
+        752
+      ],
+      "box": [
+        2175,
+        692,
+        347,
+        88
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a3_l",
+      "vkb": "A3 &#8592;",
+      "input": "JOY_BTN9",
+      "button": "9",
+      "anchor": [
+        1886,
+        663
+      ],
+      "box": [
+        1810,
+        610,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a3_r",
+      "vkb": "A3 &#8594;",
+      "input": "JOY_BTN7",
+      "button": "7",
+      "anchor": [
+        2617,
+        663
+      ],
+      "box": [
+        2541,
+        610,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a3_push",
+      "vkb": "A3 push",
+      "input": "JOY_BTN10",
+      "button": "10",
+      "anchor": [
+        2251,
+        659
+      ],
+      "box": [
+        2175,
+        599,
+        347,
+        88
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a4_u",
+      "vkb": "A4 &#8593;",
+      "input": "JOY_BTN11",
+      "button": "11",
+      "anchor": [
+        2127,
+        177
+      ],
+      "box": [
+        2051,
+        124,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a4_d",
+      "vkb": "A4 &#8595;",
+      "input": "JOY_BTN13",
+      "button": "13",
+      "anchor": [
+        2127,
+        359
+      ],
+      "box": [
+        2051,
+        298,
+        346,
+        89
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a4_l",
+      "vkb": "A4 &#8592;",
+      "input": "JOY_BTN14",
+      "button": "14",
+      "anchor": [
+        1761,
+        269
+      ],
+      "box": [
+        1685,
+        216,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a4_r",
+      "vkb": "A4 &#8594;",
+      "input": "JOY_BTN12",
+      "button": "12",
+      "anchor": [
+        2492,
+        269
+      ],
+      "box": [
+        2416,
+        216,
+        347,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "a4_push",
+      "vkb": "A4 push",
+      "input": "JOY_BTN15",
+      "button": "15",
+      "anchor": [
+        2127,
+        266
+      ],
+      "box": [
+        2051,
+        206,
+        346,
+        88
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "c1_u",
+      "vkb": "C1 &#8593;",
+      "input": "JOY_BTN16",
+      "button": "16",
+      "anchor": [
+        2341,
+        942
+      ],
+      "box": [
+        2265,
+        889,
+        347,
+        77
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "c1_d",
+      "vkb": "C1 &#8595;",
+      "input": "JOY_BTN18",
+      "button": "18",
+      "anchor": [
+        2341,
+        1187
+      ],
+      "box": [
+        2265,
+        1127,
+        346,
+        88
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "c1_l",
+      "vkb": "C1 &#8592;",
+      "input": "JOY_BTN19",
+      "button": "19",
+      "anchor": [
+        1976,
+        1063
+      ],
+      "box": [
+        1900,
+        1010,
+        347,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "c1_r",
+      "vkb": "C1 &#8594;",
+      "input": "JOY_BTN17",
+      "button": "17",
+      "anchor": [
+        2708,
+        1063
+      ],
+      "box": [
+        2632,
+        1010,
+        345,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "c1_push",
+      "vkb": "C1 push",
+      "input": "JOY_BTN20",
+      "button": "20",
+      "anchor": [
+        2341,
+        1074
+      ],
+      "box": [
+        2265,
+        970,
+        347,
+        153
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "en2_cw",
+      "vkb": "En2",
+      "input": "JOY_BTN23",
+      "button": "23",
+      "anchor": [
+        2628,
+        2035
+      ],
+      "box": [
+        2552,
+        1982,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "en2_ccw",
+      "vkb": "En2",
+      "input": "JOY_BTN24",
+      "button": "24",
+      "anchor": [
+        2627,
+        2124
+      ],
+      "box": [
+        2551,
+        2064,
+        347,
+        88
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "en1_cw",
+      "vkb": "En1",
+      "input": "JOY_BTN25",
+      "button": "25",
+      "anchor": [
+        2277,
+        2377
+      ],
+      "box": [
+        2201,
+        2324,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "en1_ccw",
+      "vkb": "En1",
+      "input": "JOY_BTN26",
+      "button": "26",
+      "anchor": [
+        2277,
+        2466
+      ],
+      "box": [
+        2201,
+        2406,
+        346,
+        88
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "f1",
+      "vkb": "F1",
+      "input": "JOY_BTN27",
+      "button": "27",
+      "anchor": [
+        2370,
+        1670
+      ],
+      "box": [
+        2294,
+        1617,
+        346,
+        77
+      ],
+      "boxFromTemplate": false,
+      "accent": true
+    },
+    {
+      "id": "f2",
+      "vkb": "F2",
+      "input": "JOY_BTN28",
+      "button": "28",
+      "anchor": [
+        2505,
+        1801
+      ],
+      "box": [
+        2429,
+        1748,
+        346,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": true
+    },
+    {
+      "id": "f3",
+      "vkb": "F3",
+      "input": "JOY_BTN29",
+      "button": "29",
+      "anchor": [
+        2219,
+        1541
+      ],
+      "box": [
+        2143,
+        1488,
+        347,
+        77
+      ],
+      "boxFromTemplate": false,
+      "accent": true
+    },
+    {
+      "id": "axis_x",
+      "vkb": "X",
+      "input": "JOY_X",
+      "button": "axes",
+      "anchor": null,
+      "box": null,
+      "role": "Roll",
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "axis_y",
+      "vkb": "Y",
+      "input": "JOY_Y",
+      "button": "axes",
+      "anchor": null,
+      "box": null,
+      "role": "Pitch",
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "axis_z",
+      "vkb": "Z",
+      "input": "JOY_RZ",
+      "button": "axes",
+      "anchor": null,
+      "box": null,
+      "role": "Rudder",
+      "boxFromTemplate": false,
+      "accent": false
+    }
+  ],
+  "unassignedTemplateFields": [
+    [
+      945,
+      115,
+      347,
+      89
+    ],
+    [
+      214,
+      300,
+      347,
+      78
+    ],
+    [
+      945,
+      300,
+      347,
+      78
+    ],
+    [
+      580,
+      462,
+      346,
+      77
+    ],
+    [
+      801,
+      1630,
+      347,
+      77
+    ],
+    [
+      801,
+      1711,
+      347,
+      89
+    ]
+  ],
+  "printedButUnused": {
+    "note": "Fields detected on the template JPG that no control owns and the drawing leaves alone. Move one into a control entry if you start using that button.",
+    "fields": [
+      [
+        942,
+        192,
+        351,
+        92
+      ],
+      [
+        578,
+        285,
+        350,
+        92
+      ],
+      [
+        578,
+        378,
+        350,
+        80
+      ],
+      [
+        1480,
+        1230,
+        330,
+        60
+      ],
+      [
+        1470,
+        1295,
+        356,
+        61
+      ],
+      [
+        1458,
+        1316,
+        375,
+        60
+      ],
+      [
+        1464,
+        1381,
+        425,
+        86
+      ],
+      [
+        795,
+        1548,
+        350,
+        78
+      ],
+      [
+        1305,
+        1731,
+        604,
+        100
+      ]
+    ]
+  }
+}

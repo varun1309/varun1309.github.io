@@ -1,0 +1,442 @@
+{
+  "viewBox": "0 0 900 620",
+  "aria": "Plan view of the A-4E-C cockpit showing the main instrument panel and the forward, middle and aft thirds of the left and right consoles, with each avionics panel placed in its zone and colour-coded by system family.",
+  "marker": "a4ear",
+  "orientation": {
+    "arrow": "450,10 443,24 457,24",
+    "label": "FORWARD / NOSE",
+    "x": 450,
+    "y": 38
+  },
+  "containers": [
+    {
+      "x": 228.0,
+      "y": 48.0,
+      "w": 444.0,
+      "h": 160.0,
+      "title": {
+        "text": "MAIN INSTRUMENT PANEL",
+        "x": 240.0,
+        "y": 67.0
+      }
+    },
+    {
+      "x": 44.0,
+      "y": 240.0,
+      "w": 168.0,
+      "h": 348.0,
+      "title": {
+        "text": "LEFT CONSOLE",
+        "x": 52.0,
+        "y": 232.0
+      }
+    },
+    {
+      "x": 688.0,
+      "y": 240.0,
+      "w": 168.0,
+      "h": 348.0,
+      "title": {
+        "text": "RIGHT CONSOLE",
+        "x": 696.0,
+        "y": 232.0
+      }
+    }
+  ],
+  "zoneLabels": [
+    {
+      "text": "FORWARD",
+      "x": 52.0,
+      "y": 260.0
+    },
+    {
+      "text": "MIDDLE",
+      "x": 52.0,
+      "y": 384.0
+    },
+    {
+      "text": "AFT",
+      "x": 52.0,
+      "y": 537.0
+    },
+    {
+      "text": "FORWARD",
+      "x": 696.0,
+      "y": 260.0
+    },
+    {
+      "text": "MIDDLE",
+      "x": 696.0,
+      "y": 334.0
+    },
+    {
+      "text": "AFT",
+      "x": 696.0,
+      "y": 481.0
+    }
+  ],
+  "groupFontSize": {
+    "main": "10.5",
+    "left": "10",
+    "right": "10"
+  },
+  "groups": {
+    "main": [
+      {
+        "x": 240.0,
+        "y": 80.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "atk",
+        "label": "RADAR SCOPE #20",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 384.0,
+        "y": 80.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "atk",
+        "label": "GUNSIGHT",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 528.0,
+        "y": 80.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "flt",
+        "label": "STBY ADI #33",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 240.0,
+        "y": 114.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "flt",
+        "label": "RADAR ALT #30",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 384.0,
+        "y": 114.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "flt",
+        "label": "ALTIMETER #41",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 528.0,
+        "y": 114.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "util",
+        "label": "MISC #36",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 240.0,
+        "y": 148.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "atk",
+        "label": "ARMAMENT #35",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 384.0,
+        "y": 148.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "atk",
+        "label": "AWRS #37",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 528.0,
+        "y": 148.0,
+        "w": 136.0,
+        "h": 28.0,
+        "family": "nav",
+        "label": "BDHI SW &#8594; on #35",
+        "sub": null,
+        "emph": true,
+        "opacity": "0.22"
+      }
+    ],
+    "left": [
+      {
+        "x": 52.0,
+        "y": 266.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "util",
+        "label": "THROTTLE",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.12"
+      },
+      {
+        "x": 52.0,
+        "y": 295.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "flt",
+        "label": "APC #17A",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 52.0,
+        "y": 324.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "atk",
+        "label": "GUNPOD SWITCHES",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 52.0,
+        "y": 353.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "com",
+        "label": "CHAFF ALE-29A",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 52.0,
+        "y": 390.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "atk",
+        "label": "RADAR CONTROL #6",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 52.0,
+        "y": 419.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "com",
+        "label": "ECM APR-25/27",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 52.0,
+        "y": 448.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "util",
+        "label": "ENGINE CONTROL",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.12"
+      },
+      {
+        "x": 52.0,
+        "y": 477.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "util",
+        "label": "OXYGEN / ANTI-G",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.12"
+      },
+      {
+        "x": 52.0,
+        "y": 506.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "util",
+        "label": "AIR CONDITIONING",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.12"
+      },
+      {
+        "x": 52.0,
+        "y": 543.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "flt",
+        "label": "AFCS #8",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      }
+    ],
+    "right": [
+      {
+        "x": 696.0,
+        "y": 266.0,
+        "w": 152.0,
+        "h": 40.0,
+        "family": "nav",
+        "label": "DOPPLER NAV #50",
+        "sub": "APN-153 + ASN-41",
+        "emph": true,
+        "opacity": "0.22"
+      },
+      {
+        "x": 696.0,
+        "y": 340.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "nav",
+        "label": "TACAN ARN-52",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 696.0,
+        "y": 369.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "com",
+        "label": "UHF RADIO #67",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 696.0,
+        "y": 398.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "util",
+        "label": "LIGHTS #47",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.12"
+      },
+      {
+        "x": 696.0,
+        "y": 427.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "nav",
+        "label": "COMPASS CTRL",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      },
+      {
+        "x": 696.0,
+        "y": 487.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "util",
+        "label": "MISC SWITCHES #53",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.12"
+      },
+      {
+        "x": 696.0,
+        "y": 516.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "util",
+        "label": "INTERIOR LTG #54",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.12"
+      },
+      {
+        "x": 696.0,
+        "y": 545.0,
+        "w": 152.0,
+        "h": 24.0,
+        "family": "flt",
+        "label": "AFCS TEST #59",
+        "sub": null,
+        "emph": false,
+        "opacity": "0.14"
+      }
+    ]
+  },
+  "zonesByGroup": {
+    "left": [
+      {
+        "text": "FORWARD",
+        "x": 52.0,
+        "y": 260.0
+      },
+      {
+        "text": "MIDDLE",
+        "x": 52.0,
+        "y": 384.0
+      },
+      {
+        "text": "AFT",
+        "x": 52.0,
+        "y": 537.0
+      }
+    ],
+    "right": [
+      {
+        "text": "FORWARD",
+        "x": 696.0,
+        "y": 260.0
+      },
+      {
+        "text": "MIDDLE",
+        "x": 696.0,
+        "y": 334.0
+      },
+      {
+        "text": "AFT",
+        "x": 696.0,
+        "y": 481.0
+      }
+    ]
+  },
+  "decor": {
+    "stick": {
+      "cx": 450,
+      "cy": 410,
+      "r": 13,
+      "label": "STICK",
+      "labelY": 440
+    },
+    "seat": {
+      "x": 396,
+      "y": 460,
+      "w": 108,
+      "h": 120,
+      "rx": 10,
+      "label": "SEAT",
+      "labelY": 525
+    }
+  }
+}

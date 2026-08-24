@@ -1,0 +1,312 @@
+{
+  "note": "The mapping as the post documents it today. Regenerated from a DCS .lua by build.py; kept so the renderers can be exercised without one.",
+  "bindings": [
+    {
+      "input": "JOY_BTN_POV1_U",
+      "modifiers": [],
+      "command": "Trim Nose Down",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_D",
+      "modifiers": [],
+      "command": "Trim Nose Up",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_L",
+      "modifiers": [],
+      "command": "Trim Left Wing Down",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_R",
+      "modifiers": [],
+      "command": "Trim Right Wing Down",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_UL",
+      "modifiers": [],
+      "command": "Force Cursor To Show Toggle",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN1",
+      "modifiers": [],
+      "command": "Gun-Rocket Trigger",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN2",
+      "modifiers": [],
+      "command": "Bomb Release",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN3",
+      "modifiers": [],
+      "command": "Chaff Dispenser Cycle",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN4",
+      "modifiers": [],
+      "command": "Radio Mic PTT",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN5",
+      "modifiers": [],
+      "command": "Wheel Brake On Else Off",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN6",
+      "modifiers": [],
+      "command": "Speedbrake Open",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN8",
+      "modifiers": [],
+      "command": "Speedbrake Close",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN9",
+      "modifiers": [],
+      "command": "Flaps Handle Up Else Stop",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN7",
+      "modifiers": [],
+      "command": "Flaps Handle Down Else Stop",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN10",
+      "modifiers": [],
+      "command": "Landing Gear Up/Down",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN11",
+      "modifiers": [],
+      "command": "AFCS Engage/Off",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN13",
+      "modifiers": [],
+      "command": "AFCS ALT/Off",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN14",
+      "modifiers": [],
+      "command": "APC Power Stby",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN12",
+      "modifiers": [],
+      "command": "APC Power Engage",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN15",
+      "modifiers": [],
+      "command": "AFCS SEL/Off",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN16",
+      "modifiers": [],
+      "command": "Weapon Function CW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN18",
+      "modifiers": [],
+      "command": "Weapon Function CCW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN19",
+      "modifiers": [],
+      "command": "Gun Ready",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN17",
+      "modifiers": [],
+      "command": "Profile/Plan",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN20",
+      "modifiers": [],
+      "command": "Master Armament On",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN23",
+      "modifiers": [],
+      "command": "AFCS HDG Continuous Inc",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN24",
+      "modifiers": [],
+      "command": "AFCS HDG Continuous Dec",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN25",
+      "modifiers": [],
+      "command": "Antenna Tilt Rotary CW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN26",
+      "modifiers": [],
+      "command": "Antenna Tilt Rotary CCW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_SLIDER1",
+      "modifiers": [],
+      "command": "Throttle axis",
+      "kind": "axis"
+    },
+    {
+      "input": "JOY_BTN_POV1_U",
+      "modifiers": [
+        "F2"
+      ],
+      "command": "Exterior Lights On/Off",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_D",
+      "modifiers": [
+        "F2"
+      ],
+      "command": "NVG Toggle",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_L",
+      "modifiers": [
+        "F2"
+      ],
+      "command": "NVG Gain Decrease",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_R",
+      "modifiers": [
+        "F2"
+      ],
+      "command": "NVG Gain Increase",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_U",
+      "modifiers": [
+        "F3"
+      ],
+      "command": "AWRS Qty Select CW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_D",
+      "modifiers": [
+        "F3"
+      ],
+      "command": "AWRS Qty Select CCW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_L",
+      "modifiers": [
+        "F3"
+      ],
+      "command": "AWRS Mode CCW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_R",
+      "modifiers": [
+        "F3"
+      ],
+      "command": "AWRS Mode CW",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_U",
+      "modifiers": [
+        "F2",
+        "F3"
+      ],
+      "command": "Catapult Hook-Up",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_D",
+      "modifiers": [
+        "F2",
+        "F3"
+      ],
+      "command": "Pilot Salute",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_L",
+      "modifiers": [
+        "F2",
+        "F3"
+      ],
+      "command": "Canopy Open/Close",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN_POV1_R",
+      "modifiers": [
+        "F2",
+        "F3"
+      ],
+      "command": "JATO Button",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_BTN5",
+      "modifiers": [
+        "F2",
+        "F3"
+      ],
+      "command": "VOIP PTT",
+      "kind": "key"
+    },
+    {
+      "input": "JOY_X",
+      "modifiers": [],
+      "command": "Roll",
+      "kind": "axis"
+    },
+    {
+      "input": "JOY_Y",
+      "modifiers": [],
+      "command": "Pitch",
+      "kind": "axis"
+    },
+    {
+      "input": "JOY_RZ",
+      "modifiers": [],
+      "command": "Rudder",
+      "kind": "axis"
+    }
+  ]
+}

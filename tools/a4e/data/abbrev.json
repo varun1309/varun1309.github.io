@@ -1,0 +1,70 @@
+{
+  "note": "DCS command name -> short label for the template field. Anything absent falls back to shorten() in render_vkb.py.",
+  "map": {
+    "Gun-Rocket Trigger": "GUN-ROCKET FIRE",
+    "Bomb Release": "BOMB RELEASE",
+    "Trim Nose Down": "TRIM NOSE DN",
+    "Trim Nose Up": "TRIM NOSE UP",
+    "Trim Left Wing Down": "TRIM L WING DN",
+    "Trim Right Wing Down": "TRIM R WING DN",
+    "Force Cursor To Show Toggle": "FORCE CURSOR",
+    "Chaff Dispenser Cycle": "CHAFF CYCLE",
+    "Radio Mic PTT": "RADIO MIC PTT",
+    "Wheel Brake On Else Off": "WHEEL BRAKE",
+    "Speedbrake Open": "SPEEDBRAKE OPEN",
+    "Speedbrake Close": "SPEEDBRAKE CLOSE",
+    "Flaps Handle Up Else Stop": "FLAPS UP (HOLD)",
+    "Flaps Handle Down Else Stop": "FLAPS DN (HOLD)",
+    "Landing Gear Up/Down": "GEAR UP/DOWN",
+    "AFCS Engage/Off": "AFCS ENGAGE/OFF",
+    "AFCS ALT/Off": "AFCS ALT/OFF",
+    "APC Power Stby": "APC POWER STBY",
+    "APC Power Engage": "APC PWR ENGAGE",
+    "AFCS SEL/Off": "AFCS SEL/OFF",
+    "Weapon Function CW": "WPN FUNC CW",
+    "Weapon Function CCW": "WPN FUNC CCW",
+    "Gun Ready": "GUN READY",
+    "Profile/Plan": "PROFILE/PLAN",
+    "Master Armament On": "MASTER ARM ON",
+    "AFCS HDG Continuous Inc": "AFCS HDG INC",
+    "AFCS HDG Continuous Dec": "AFCS HDG DEC",
+    "Antenna Tilt Rotary CW": "ANT TILT CW",
+    "Antenna Tilt Rotary CCW": "ANT TILT CCW",
+    "Throttle": "THROTTLE AXIS",
+    "Throttle axis": "THROTTLE AXIS",
+    "Exterior Lights On/Off": "EXT LIGHTS",
+    "NVG Toggle": "NVG TOGGLE",
+    "NVG Gain Decrease": "NVG GAIN DEC",
+    "NVG Gain Increase": "NVG GAIN INC",
+    "AWRS Qty Select CW": "AWRS QTY CW",
+    "AWRS Qty Select CCW": "AWRS QTY CCW",
+    "AWRS Mode CCW": "AWRS MODE CCW",
+    "AWRS Mode CW": "AWRS MODE CW",
+    "Catapult Hook-Up": "CATAPULT HOOK",
+    "Pilot Salute": "PILOT SALUTE",
+    "Canopy Open/Close": "CANOPY OPN/CLS",
+    "JATO Button": "JATO BUTTON",
+    "VOIP PTT": "VOIP PTT"
+  },
+  "meta": {
+    "f1": {
+      "text": "SPARE / UNUSED",
+      "accent": true,
+      "table": "Spare &mdash; deliberately unassigned"
+    },
+    "f2": {
+      "text": "F2 MODIFIER",
+      "accent": true,
+      "table": "Modifiers",
+      "held": "HELD &#8212; MODIFIER",
+      "heldTracking": "1"
+    },
+    "f3": {
+      "text": "F3 MODIFIER",
+      "accent": true,
+      "table": "Modifiers",
+      "held": "HELD &#8212; MODIFIER",
+      "heldTracking": "1"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "modifiers": [],
+    "n": 1,
+    "title": "fly &amp; fire",
+    "svgTitle": "FLY &amp; FIRE",
+    "chip": "No modifier",
+    "svgChip": "NO MODIFIER"
+  },
+  {
+    "modifiers": [
+      "F2"
+    ],
+    "n": 2,
+    "title": "flight config &amp; sensors",
+    "svgTitle": "FLIGHT CONFIG &amp; SENSORS",
+    "chip": "Hold F2",
+    "svgChip": "HOLD F2"
+  },
+  {
+    "modifiers": [
+      "F3"
+    ],
+    "n": 3,
+    "title": "weapons",
+    "svgTitle": "WEAPONS",
+    "chip": "Hold F3",
+    "svgChip": "HOLD F3"
+  },
+  {
+    "modifiers": [
+      "F2",
+      "F3"
+    ],
+    "n": 4,
+    "title": "carrier ops &amp; housekeeping",
+    "svgTitle": "CARRIER OPS &amp; HOUSEKEEPING",
+    "chip": "Hold F2 + F3",
+    "svgChip": "HOLD F2 + F3"
+  }
+]

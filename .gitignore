@@ -2,6 +2,10 @@
 node_modules
 settings.json
 
+# Python (tools/)
+__pycache__/
+*.pyc
+
 # Jekyll
 _site/
 .jekyll-cache/
