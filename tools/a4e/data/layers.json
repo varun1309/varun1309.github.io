@@ -12,8 +12,8 @@
       "F2"
     ],
     "n": 2,
-    "title": "flight config &amp; sensors",
-    "svgTitle": "FLIGHT CONFIG &amp; SENSORS",
+    "title": "view, NVGs &amp; sensors",
+    "svgTitle": "VIEW, NVGS &amp; SENSORS",
     "chip": "Hold F2",
     "svgChip": "HOLD F2"
   },
@@ -22,8 +22,8 @@
       "F3"
     ],
     "n": 3,
-    "title": "weapons",
-    "svgTitle": "WEAPONS",
+    "title": "stations &amp; nav radios",
+    "svgTitle": "STATIONS &amp; NAV RADIOS",
     "chip": "Hold F3",
     "svgChip": "HOLD F3"
   },
@@ -33,9 +33,19 @@
       "F3"
     ],
     "n": 4,
-    "title": "carrier ops &amp; housekeeping",
-    "svgTitle": "CARRIER OPS &amp; HOUSEKEEPING",
+    "title": "carrier &amp; ground ops",
+    "svgTitle": "CARRIER &amp; GROUND OPS",
     "chip": "Hold F2 + F3",
     "svgChip": "HOLD F2 + F3"
+  },
+  {
+    "modifiers": [
+      "Pinky"
+    ],
+    "n": 5,
+    "title": "zoom",
+    "svgTitle": "ZOOM",
+    "chip": "Hold Pinky",
+    "svgChip": "HOLD PINKY"
   }
 ]

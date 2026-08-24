@@ -4,11 +4,11 @@ title: "DCS A-4E-C: where every avionics panel is, and how to work it"
 standfirst: >-
   The Skyhawk labels half its cockpit by function and half by part number, which
   makes it look like systems are missing. A cockpit map, the operating procedure
-  for each system with its real switch detents, and a four-layer HOTAS mapping.
+  for each system with its real switch detents, and a five-layer HOTAS mapping.
 description: >-
   A reference for the DCS A-4E-C Skyhawk: a plan-view cockpit map, per-system
   operating procedures with exact switch detents read from the mod source, and a
-  four-layer VKB Gladiator NXT EVO keybind mapping.
+  five-layer VKB Gladiator NXT EVO keybind mapping.
 embed: true
 ---
 
@@ -695,14 +695,14 @@ embed: true
   <!-- ============ PAGE 3 ============ -->
   <section class="page a4epage3">
 
-    <h2>Gladiator NXT EVO &mdash; four layers</h2>
-    <p>This is VKB's own template for the NXT EVO, filled in once per layer. Buttons <strong>28 (F2)</strong> and <strong>29 (F3)</strong> are the modifiers, giving four layers &mdash; the same scheme the community gamepad chart uses. They sit on the base beside the analog wheel, so your <strong>left</strong> hand shifts layers while your right stays on the grip. <strong>F1 (27)</strong> is left deliberately spare.</p>
+    <h2>Gladiator NXT EVO &mdash; five layers</h2>
+    <p>This is VKB's own template for the NXT EVO, filled in once per layer. Buttons <strong>28 (F2)</strong> and <strong>29 (F3)</strong> are the modifiers, and used together they give a fourth layer &mdash; the same scheme the community gamepad chart uses. They sit on the base beside the analog wheel, so your <strong>left</strong> hand shifts layers while your right stays on the grip. A fifth layer hangs off the <strong>pinky</strong> paddle and carries nothing but zoom.</p>
     <p>Greyed boxes do nothing on that layer; amber boxes are the modifier you're holding. The 8-way POV hat carries every layer's shifted functions, because it's the one control you can reach without changing grip &mdash; and its centre press is VKB's hardware Mode switch, so it isn't bindable in DCS.</p>
 
     <figure>
       <div class="sheet">
 <!-- a4e:gen vkb-svg -->
-<svg viewBox="0 0 3300 10800" role="img" aria-label="The official VKB Gladiator NXT EVO keybind template, filled in four times &#8212; once per modifier layer &#8212; with the A-4E-C bindings written into each control's label box.">
+<svg viewBox="0 0 3300 13500" role="img" aria-label="The official VKB Gladiator NXT EVO keybind template, filled in five times &#8212; once per modifier layer &#8212; with the A-4E-C bindings written into each control's label box.">
 <defs>
 <image id="a4eevo" x="0" y="0" width="3300" height="2550" href="/assets/img/vkb-gladiator-nxt-evo-template.jpg"/>
 </defs>
@@ -714,70 +714,65 @@ embed: true
 <text x="3256" y="86" font-size="38" letter-spacing="3" fill="#6A6D60" text-anchor="end">NO MODIFIER</text>
 <g transform="translate(0,150)">
 <use href="#a4eevo"/>
-<rect x="2294" y="1617" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="2375" y="2202" width="347" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="797" y="1470" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="978" y="1262" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="2175" y="599" width="347" height="88" fill="#000" fill-opacity="0.055"/>
 <rect x="2429" y="1748" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2143" y="1488" width="347" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
-<rect x="214" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="945" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="801" y="1630" width="347" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="801" y="1711" width="347" height="89" fill="#000" fill-opacity="0.055"/>
-<text x="2395" y="2255" font-size="26" letter-spacing="0.5" fill="#16180F">THROTTLE AXIS</text>
-<text x="634" y="1915" font-size="26" letter-spacing="0.5" fill="#16180F">GUN-ROCKET FIRE</text>
-<text x="510" y="2007" font-size="26" letter-spacing="0.5" fill="#16180F">BOMB RELEASE</text>
+<text x="634" y="1915" font-size="26" letter-spacing="0.5" fill="#16180F">WHEEL BRAKE</text>
+<text x="510" y="2007" font-size="26" letter-spacing="0.5" fill="#16180F">GUN-ROCKET FIRE</text>
 <text x="600" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">TRIM NOSE DN</text>
 <text x="600" y="353" font-size="26" letter-spacing="0.5" fill="#16180F">TRIM NOSE UP</text>
 <text x="234" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">TRIM L WING DN</text>
 <text x="965" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">TRIM R WING DN</text>
-<text x="234" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">FORCE CURSOR</text>
-<text x="710" y="747" font-size="26" letter-spacing="0.5" fill="#16180F">CHAFF CYCLE</text>
-<text x="873" y="1523" font-size="26" letter-spacing="0.5" fill="#16180F">RADIO MIC PTT</text>
-<text x="1054" y="1315" font-size="26" letter-spacing="0.5" fill="#16180F">WHEEL BRAKE</text>
+<text x="234" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">TRIM RESET</text>
+<text x="710" y="747" font-size="26" letter-spacing="0.5" fill="#16180F">BOMB RELEASE</text>
 <text x="2251" y="570" font-size="26" letter-spacing="0.5" fill="#16180F">SPEEDBRAKE OPEN</text>
 <text x="2251" y="752" font-size="26" letter-spacing="0.5" fill="#16180F">SPEEDBRAKE CLOSE</text>
 <text x="1886" y="663" font-size="26" letter-spacing="0.5" fill="#16180F">FLAPS UP (HOLD)</text>
 <text x="2617" y="663" font-size="26" letter-spacing="0.5" fill="#16180F">FLAPS DN (HOLD)</text>
-<text x="2251" y="659" font-size="26" letter-spacing="0.5" fill="#16180F">GEAR UP/DOWN</text>
 <text x="2127" y="177" font-size="26" letter-spacing="0.5" fill="#16180F">AFCS ENGAGE/OFF</text>
 <text x="2127" y="359" font-size="26" letter-spacing="0.5" fill="#16180F">AFCS ALT/OFF</text>
 <text x="1761" y="269" font-size="26" letter-spacing="0.5" fill="#16180F">APC POWER STBY</text>
 <text x="2492" y="269" font-size="26" letter-spacing="0.5" fill="#16180F">APC PWR ENGAGE</text>
-<text x="2127" y="266" font-size="26" letter-spacing="0.5" fill="#16180F">AFCS SEL/OFF</text>
+<text x="2127" y="266" font-size="26" letter-spacing="0.5" fill="#16180F">AFCS HDG SEL/OFF</text>
 <text x="2341" y="942" font-size="26" letter-spacing="0.5" fill="#16180F">WPN FUNC CW</text>
 <text x="2341" y="1187" font-size="26" letter-spacing="0.5" fill="#16180F">WPN FUNC CCW</text>
-<text x="1976" y="1063" font-size="26" letter-spacing="0.5" fill="#16180F">GUN READY</text>
+<text x="1976" y="1063" font-size="26" letter-spacing="0.5" fill="#16180F">GUNS READY/SAFE</text>
 <text x="2708" y="1063" font-size="26" letter-spacing="0.5" fill="#16180F">PROFILE/PLAN</text>
 <text x="2341" y="1074" font-size="26" letter-spacing="0.5" fill="#16180F">MASTER ARM ON</text>
 <text x="2628" y="2035" font-size="26" letter-spacing="0.5" fill="#16180F">AFCS HDG INC</text>
 <text x="2627" y="2124" font-size="26" letter-spacing="0.5" fill="#16180F">AFCS HDG DEC</text>
 <text x="2277" y="2377" font-size="26" letter-spacing="0.5" fill="#16180F">ANT TILT CW</text>
 <text x="2277" y="2466" font-size="26" letter-spacing="0.5" fill="#16180F">ANT TILT CCW</text>
-<text x="2370" y="1670" font-size="26" letter-spacing="0.5" fill="#8A5A0F">SPARE / UNUSED</text>
+<text x="2370" y="1670" font-size="26" letter-spacing="0.5" fill="#16180F">GEAR UP/DOWN</text>
 <text x="2505" y="1801" font-size="26" letter-spacing="0.5" fill="#8A5A0F">F2 MODIFIER</text>
 <text x="2219" y="1541" font-size="26" letter-spacing="0.5" fill="#8A5A0F">F3 MODIFIER</text>
+<text x="234" y="361" font-size="26" letter-spacing="0.5" fill="#16180F">UI LEFT SHOULDER</text>
+<text x="965" y="361" font-size="26" letter-spacing="0.5" fill="#16180F">UI RIGHT SHOULDR</text>
+<text x="877" y="1683" font-size="26" letter-spacing="0.5" fill="#16180F">CAMERA CENTRE</text>
+<text x="877" y="1771" font-size="26" letter-spacing="0.5" fill="#16180F">CAMERA FORWARD</text>
 </g></g>
 <g transform="translate(0,2700)" font-family="ui-monospace, Menlo, monospace">
 <rect x="0" y="18" width="3300" height="104" fill="#E7E5DD"/>
 <rect x="0" y="18" width="10" height="104" fill="#8A5A0F"/>
 <text x="44" y="86" font-size="46" letter-spacing="4" fill="#8A5A0F">LAYER 2</text>
-<text x="300" y="86" font-size="46" letter-spacing="3" fill="#16180F">FLIGHT CONFIG &amp; SENSORS</text>
+<text x="300" y="86" font-size="46" letter-spacing="3" fill="#16180F">VIEW, NVGS &amp; SENSORS</text>
 <text x="3256" y="86" font-size="38" letter-spacing="3" fill="#6A6D60" text-anchor="end">HOLD F2</text>
 <g transform="translate(0,150)">
 <use href="#a4eevo"/>
 <rect x="2429" y="1748" width="346" height="78" fill="#8A5A0F" fill-opacity="0.20"/>
 <rect x="2375" y="2202" width="347" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="558" y="1862" width="347" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="434" y="1954" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="214" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
-<rect x="634" y="694" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="797" y="1470" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="978" y="1262" width="346" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="2175" y="517" width="347" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2175" y="692" width="347" height="88" fill="#000" fill-opacity="0.055"/>
 <rect x="1810" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2541" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2175" y="599" width="347" height="88" fill="#000" fill-opacity="0.055"/>
 <rect x="2051" y="124" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2051" y="298" width="346" height="89" fill="#000" fill-opacity="0.055"/>
 <rect x="1685" y="216" width="346" height="78" fill="#000" fill-opacity="0.055"/>
@@ -790,21 +785,24 @@ embed: true
 <rect x="2265" y="970" width="347" height="153" fill="#000" fill-opacity="0.055"/>
 <rect x="2552" y="1982" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2551" y="2064" width="347" height="88" fill="#000" fill-opacity="0.055"/>
-<rect x="2201" y="2324" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2201" y="2406" width="346" height="88" fill="#000" fill-opacity="0.055"/>
 <rect x="2294" y="1617" width="346" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="2143" y="1488" width="347" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
 <rect x="214" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="945" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
 <rect x="801" y="1630" width="347" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="801" y="1711" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<text x="634" y="1915" font-size="26" letter-spacing="0.5" fill="#16180F">TRIM RESET</text>
 <text x="600" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">EXT LIGHTS</text>
 <text x="600" y="353" font-size="26" letter-spacing="0.5" fill="#16180F">NVG TOGGLE</text>
 <text x="234" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">NVG GAIN DEC</text>
 <text x="965" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">NVG GAIN INC</text>
-<text x="2370" y="1670" font-size="26" letter-spacing="0.5" fill="#8A5A0F">SPARE / UNUSED</text>
+<text x="710" y="747" font-size="26" letter-spacing="0.5" fill="#16180F">CLICKABLE CKPT</text>
+<text x="873" y="1523" font-size="26" letter-spacing="0.5" fill="#16180F">VIEW CENTRE</text>
+<text x="2251" y="659" font-size="26" letter-spacing="0.5" fill="#16180F">COMMS MENU</text>
+<text x="2277" y="2377" font-size="26" letter-spacing="0.5" fill="#16180F">RADAR MODE CCW</text>
+<text x="2277" y="2466" font-size="26" letter-spacing="0.5" fill="#16180F">RADAR MODE CW</text>
 <text x="2505" y="1801" font-size="26" letter-spacing="1" fill="#8A5A0F">HELD &#8212; MODIFIER</text>
 <text x="2219" y="1541" font-size="26" letter-spacing="0.5" fill="#8A5A0F">F3 MODIFIER</text>
 </g></g>
@@ -812,7 +810,7 @@ embed: true
 <rect x="0" y="18" width="3300" height="104" fill="#E7E5DD"/>
 <rect x="0" y="18" width="10" height="104" fill="#8A5A0F"/>
 <text x="44" y="86" font-size="46" letter-spacing="4" fill="#8A5A0F">LAYER 3</text>
-<text x="300" y="86" font-size="46" letter-spacing="3" fill="#16180F">WEAPONS</text>
+<text x="300" y="86" font-size="46" letter-spacing="3" fill="#16180F">STATIONS &amp; NAV RADIOS</text>
 <text x="3256" y="86" font-size="38" letter-spacing="3" fill="#6A6D60" text-anchor="end">HOLD F3</text>
 <g transform="translate(0,150)">
 <use href="#a4eevo"/>
@@ -824,8 +822,109 @@ embed: true
 <rect x="634" y="694" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="797" y="1470" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="978" y="1262" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="2051" y="124" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2051" y="298" width="346" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="1685" y="216" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2416" y="216" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2051" y="206" width="346" height="88" fill="#000" fill-opacity="0.055"/>
+<rect x="2265" y="970" width="347" height="153" fill="#000" fill-opacity="0.055"/>
+<rect x="2294" y="1617" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="2429" y="1748" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="214" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="945" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="801" y="1630" width="347" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="801" y="1711" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<text x="600" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS QTY CW</text>
+<text x="600" y="353" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS QTY CCW</text>
+<text x="234" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS MODE CCW</text>
+<text x="965" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS MODE CW</text>
+<text x="2251" y="570" font-size="26" letter-spacing="0.5" fill="#16180F">STATION 2 READY</text>
+<text x="2251" y="752" font-size="26" letter-spacing="0.5" fill="#16180F">STATION 4 READY</text>
+<text x="1886" y="663" font-size="26" letter-spacing="0.5" fill="#16180F">STATION 5 READY</text>
+<text x="2617" y="663" font-size="26" letter-spacing="0.5" fill="#16180F">STATION 3 READY</text>
+<text x="2251" y="659" font-size="26" letter-spacing="0.5" fill="#16180F">STATION 1 READY</text>
+<text x="2341" y="942" font-size="26" letter-spacing="0.5" fill="#16180F">TACAN MODE CCW</text>
+<text x="2341" y="1187" font-size="26" letter-spacing="0.5" fill="#16180F">TACAN MODE CW</text>
+<text x="1976" y="1063" font-size="26" letter-spacing="0.5" fill="#16180F">ASN-41 FUNC CCW</text>
+<text x="2708" y="1063" font-size="26" letter-spacing="0.5" fill="#16180F">ASN-41 FUNC CW</text>
+<text x="2628" y="2035" font-size="26" letter-spacing="0.5" fill="#16180F">DOPPLER MODE CCW</text>
+<text x="2627" y="2124" font-size="26" letter-spacing="0.5" fill="#16180F">DOPPLER MODE CW</text>
+<text x="2277" y="2377" font-size="26" letter-spacing="0.5" fill="#16180F">THR LOCK STEP UP</text>
+<text x="2277" y="2466" font-size="26" letter-spacing="0.5" fill="#16180F">THR LOCK STEP DN</text>
+<text x="2505" y="1801" font-size="26" letter-spacing="0.5" fill="#8A5A0F">F2 MODIFIER</text>
+<text x="2219" y="1541" font-size="26" letter-spacing="1" fill="#8A5A0F">HELD &#8212; MODIFIER</text>
+</g></g>
+<g transform="translate(0,8100)" font-family="ui-monospace, Menlo, monospace">
+<rect x="0" y="18" width="3300" height="104" fill="#E7E5DD"/>
+<rect x="0" y="18" width="10" height="104" fill="#8A5A0F"/>
+<text x="44" y="86" font-size="46" letter-spacing="4" fill="#8A5A0F">LAYER 4</text>
+<text x="300" y="86" font-size="46" letter-spacing="3" fill="#16180F">CARRIER &amp; GROUND OPS</text>
+<text x="3256" y="86" font-size="38" letter-spacing="3" fill="#6A6D60" text-anchor="end">HOLD F2 + F3</text>
+<g transform="translate(0,150)">
+<use href="#a4eevo"/>
+<rect x="2429" y="1748" width="346" height="78" fill="#8A5A0F" fill-opacity="0.20"/>
+<rect x="2143" y="1488" width="347" height="77" fill="#8A5A0F" fill-opacity="0.20"/>
+<rect x="2375" y="2202" width="347" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="558" y="1862" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="434" y="1954" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="214" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="634" y="694" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="797" y="1470" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="978" y="1262" width="346" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="2175" y="517" width="347" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2175" y="692" width="347" height="88" fill="#000" fill-opacity="0.055"/>
+<rect x="1810" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2541" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2175" y="599" width="347" height="88" fill="#000" fill-opacity="0.055"/>
+<rect x="2051" y="124" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2051" y="298" width="346" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="1685" y="216" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2416" y="216" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2051" y="206" width="346" height="88" fill="#000" fill-opacity="0.055"/>
+<rect x="2265" y="889" width="347" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="2265" y="1127" width="346" height="88" fill="#000" fill-opacity="0.055"/>
+<rect x="1900" y="1010" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2632" y="1010" width="345" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2265" y="970" width="347" height="153" fill="#000" fill-opacity="0.055"/>
+<rect x="2552" y="1982" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2551" y="2064" width="347" height="88" fill="#000" fill-opacity="0.055"/>
+<rect x="2201" y="2324" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="2201" y="2406" width="346" height="88" fill="#000" fill-opacity="0.055"/>
+<rect x="214" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="945" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="801" y="1630" width="347" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="801" y="1711" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<text x="600" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">CATAPULT HOOK</text>
+<text x="600" y="353" font-size="26" letter-spacing="0.5" fill="#16180F">PILOT SALUTE</text>
+<text x="234" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">CANOPY OPN/CLS</text>
+<text x="965" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">SPOILER ARM</text>
+<text x="2370" y="1670" font-size="26" letter-spacing="0.5" fill="#16180F">ENGINE START</text>
+<text x="2505" y="1801" font-size="26" letter-spacing="1" fill="#8A5A0F">HELD &#8212; MODIFIER</text>
+<text x="2219" y="1541" font-size="26" letter-spacing="1" fill="#8A5A0F">HELD &#8212; MODIFIER</text>
+</g></g>
+<g transform="translate(0,10800)" font-family="ui-monospace, Menlo, monospace">
+<rect x="0" y="18" width="3300" height="104" fill="#E7E5DD"/>
+<rect x="0" y="18" width="10" height="104" fill="#8A5A0F"/>
+<text x="44" y="86" font-size="46" letter-spacing="4" fill="#8A5A0F">LAYER 5</text>
+<text x="300" y="86" font-size="46" letter-spacing="3" fill="#16180F">ZOOM</text>
+<text x="3256" y="86" font-size="38" letter-spacing="3" fill="#6A6D60" text-anchor="end">HOLD PINKY</text>
+<g transform="translate(0,150)">
+<use href="#a4eevo"/>
+<rect x="2375" y="2202" width="347" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="558" y="1862" width="347" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="434" y="1954" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="584" y="111" width="338" height="81" fill="#000" fill-opacity="0.055"/>
+<rect x="211" y="285" width="351" height="92" fill="#000" fill-opacity="0.055"/>
+<rect x="211" y="192" width="351" height="92" fill="#000" fill-opacity="0.055"/>
+<rect x="578" y="192" width="351" height="92" fill="#000" fill-opacity="0.055"/>
+<rect x="214" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="634" y="694" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="797" y="1470" width="346" height="78" fill="#000" fill-opacity="0.055"/>
+<rect x="978" y="1262" width="346" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="1810" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2541" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="2175" y="599" width="347" height="88" fill="#000" fill-opacity="0.055"/>
@@ -845,70 +944,17 @@ embed: true
 <rect x="2201" y="2406" width="346" height="88" fill="#000" fill-opacity="0.055"/>
 <rect x="2294" y="1617" width="346" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="2429" y="1748" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
+<rect x="2143" y="1488" width="347" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="214" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
 <rect x="945" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
 <rect x="801" y="1630" width="347" height="77" fill="#000" fill-opacity="0.055"/>
 <rect x="801" y="1711" width="347" height="89" fill="#000" fill-opacity="0.055"/>
-<text x="600" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS QTY CW</text>
-<text x="600" y="353" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS QTY CCW</text>
-<text x="234" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS MODE CCW</text>
-<text x="965" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">AWRS MODE CW</text>
-<text x="2370" y="1670" font-size="26" letter-spacing="0.5" fill="#8A5A0F">SPARE / UNUSED</text>
+<rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
+<text x="2251" y="570" font-size="26" letter-spacing="0.5" fill="#16180F">ZOOM IN SLOW</text>
+<text x="2251" y="752" font-size="26" letter-spacing="0.5" fill="#16180F">ZOOM NORMAL</text>
 <text x="2505" y="1801" font-size="26" letter-spacing="0.5" fill="#8A5A0F">F2 MODIFIER</text>
-<text x="2219" y="1541" font-size="26" letter-spacing="1" fill="#8A5A0F">HELD &#8212; MODIFIER</text>
-</g></g>
-<g transform="translate(0,8100)" font-family="ui-monospace, Menlo, monospace">
-<rect x="0" y="18" width="3300" height="104" fill="#E7E5DD"/>
-<rect x="0" y="18" width="10" height="104" fill="#8A5A0F"/>
-<text x="44" y="86" font-size="46" letter-spacing="4" fill="#8A5A0F">LAYER 4</text>
-<text x="300" y="86" font-size="46" letter-spacing="3" fill="#16180F">CARRIER OPS &amp; HOUSEKEEPING</text>
-<text x="3256" y="86" font-size="38" letter-spacing="3" fill="#6A6D60" text-anchor="end">HOLD F2 + F3</text>
-<g transform="translate(0,150)">
-<use href="#a4eevo"/>
-<rect x="2429" y="1748" width="346" height="78" fill="#8A5A0F" fill-opacity="0.20"/>
-<rect x="2143" y="1488" width="347" height="77" fill="#8A5A0F" fill-opacity="0.20"/>
-<rect x="2375" y="2202" width="347" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="558" y="1862" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="434" y="1954" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="214" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
-<rect x="634" y="694" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="797" y="1470" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2175" y="517" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2175" y="692" width="347" height="88" fill="#000" fill-opacity="0.055"/>
-<rect x="1810" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2541" y="610" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2175" y="599" width="347" height="88" fill="#000" fill-opacity="0.055"/>
-<rect x="2051" y="124" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2051" y="298" width="346" height="89" fill="#000" fill-opacity="0.055"/>
-<rect x="1685" y="216" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2416" y="216" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2051" y="206" width="346" height="88" fill="#000" fill-opacity="0.055"/>
-<rect x="2265" y="889" width="347" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="2265" y="1127" width="346" height="88" fill="#000" fill-opacity="0.055"/>
-<rect x="1900" y="1010" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2632" y="1010" width="345" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2265" y="970" width="347" height="153" fill="#000" fill-opacity="0.055"/>
-<rect x="2552" y="1982" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2551" y="2064" width="347" height="88" fill="#000" fill-opacity="0.055"/>
-<rect x="2201" y="2324" width="346" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="2201" y="2406" width="346" height="88" fill="#000" fill-opacity="0.055"/>
-<rect x="2294" y="1617" width="346" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="945" y="115" width="347" height="89" fill="#000" fill-opacity="0.055"/>
-<rect x="214" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="945" y="300" width="347" height="78" fill="#000" fill-opacity="0.055"/>
-<rect x="580" y="462" width="346" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="801" y="1630" width="347" height="77" fill="#000" fill-opacity="0.055"/>
-<rect x="801" y="1711" width="347" height="89" fill="#000" fill-opacity="0.055"/>
-<text x="600" y="176" font-size="26" letter-spacing="0.5" fill="#16180F">CATAPULT HOOK</text>
-<text x="600" y="353" font-size="26" letter-spacing="0.5" fill="#16180F">PILOT SALUTE</text>
-<text x="234" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">CANOPY OPN/CLS</text>
-<text x="965" y="268" font-size="26" letter-spacing="0.5" fill="#16180F">JATO BUTTON</text>
-<text x="1054" y="1315" font-size="26" letter-spacing="0.5" fill="#16180F">VOIP PTT</text>
-<text x="2370" y="1670" font-size="26" letter-spacing="0.5" fill="#8A5A0F">SPARE / UNUSED</text>
-<text x="2505" y="1801" font-size="26" letter-spacing="1" fill="#8A5A0F">HELD &#8212; MODIFIER</text>
-<text x="2219" y="1541" font-size="26" letter-spacing="1" fill="#8A5A0F">HELD &#8212; MODIFIER</text>
+<text x="2219" y="1541" font-size="26" letter-spacing="0.5" fill="#8A5A0F">F3 MODIFIER</text>
 </g></g>
 </svg>
 <!-- /a4e:gen vkb-svg -->
@@ -920,61 +966,79 @@ embed: true
         <div class="layerhead"><h3>Layer 1 &mdash; fly &amp; fire</h3><span class="modchip">No modifier</span></div>
         <div class="scroller"><table>
           <thead><tr><th>VKB control</th><th>Button</th><th>Bind</th></tr></thead><tbody>
-            <tr><td class="pn">Base analog wheel</td><td class="num">Alog</td><td>Throttle axis</td></tr>
             <tr><td class="pn">X / Y / Z</td><td class="num">axes</td><td>Roll / Pitch / Rudder</td></tr>
-            <tr><td class="pn">Fire 1</td><td class="num">1</td><td><code>Gun-Rocket Trigger</code></td></tr>
-            <tr><td class="pn">Fire 2</td><td class="num">2</td><td><code>Bomb Release</code></td></tr>
-            <tr><td class="pn">POV &#8593; / &#8595;</td><td class="num">&mdash;</td><td><code>Trim Nose Down</code> / <code>Trim Nose Up</code></td></tr>
-            <tr><td class="pn">POV &#8592; / &#8594;</td><td class="num">&mdash;</td><td><code>Trim Left Wing Down</code> / <code>Trim Right Wing Down</code></td></tr>
-            <tr><td class="pn">POV &#8598;</td><td class="num">&mdash;</td><td><code>Force Cursor To Show Toggle</code></td></tr>
-            <tr><td class="pn">A2 (red)</td><td class="num">3</td><td><code>Chaff Dispenser Cycle</code></td></tr>
-            <tr><td class="pn">B1 SpeedFire</td><td class="num">4</td><td><code>Radio Mic PTT</code></td></tr>
-            <tr><td class="pn">D1</td><td class="num">5</td><td><code>Wheel Brake On Else Off</code></td></tr>
-            <tr><td class="pn">A3 &#8593; / &#8595;</td><td class="num">6 / 8</td><td><code>Speedbrake Open</code> / <code>Speedbrake Close</code></td></tr>
-            <tr><td class="pn">A3 &#8592; / &#8594;</td><td class="num">9 / 7</td><td><code>Flaps Handle Up Else Stop</code> / <code>Flaps Handle Down Else Stop</code></td></tr>
-            <tr><td class="pn">A3 push</td><td class="num">10</td><td><code>Landing Gear Up/Down</code></td></tr>
-            <tr><td class="pn">A4 &#8593; / &#8595;</td><td class="num">11 / 13</td><td><code>AFCS Engage/Off</code> / <code>AFCS ALT/Off</code></td></tr>
-            <tr><td class="pn">A4 &#8592; / &#8594;</td><td class="num">14 / 12</td><td><code>APC Power Stby</code> / <code>APC Power Engage</code></td></tr>
-            <tr><td class="pn">A4 push</td><td class="num">15</td><td><code>AFCS SEL/Off</code></td></tr>
-            <tr><td class="pn">C1 &#8593; / &#8595;</td><td class="num">16 / 18</td><td><code>Weapon Function CW</code> / <code>CCW</code></td></tr>
-            <tr><td class="pn">C1 &#8592; / &#8594;</td><td class="num">19 / 17</td><td><code>Gun Ready</code> / <code>Profile/Plan</code></td></tr>
-            <tr><td class="pn">C1 push</td><td class="num">20</td><td><code>Master Armament On</code></td></tr>
-            <tr><td class="pn">En2</td><td class="num">23 / 24</td><td><code>AFCS HDG Continuous Inc</code> / <code>Dec</code></td></tr>
-            <tr><td class="pn">En1</td><td class="num">25 / 26</td><td><code>Antenna Tilt Rotary CW</code> / <code>CCW</code></td></tr>
-            <tr><td class="pn">F1</td><td class="num">27</td><td>Spare &mdash; deliberately unassigned</td></tr>
+            <tr><td class="pn">Fire 1</td><td class="num">1</td><td><code>Wheel Brake - ON else OFF</code></td></tr>
+            <tr><td class="pn">Fire 2</td><td class="num">2</td><td><code>Gun-Rocket Trigger</code></td></tr>
+            <tr><td class="pn">POV &#8593; / &#8595;</td><td class="num">&mdash;</td><td><code>Trim Switch - NOSE DOWN</code> / <code>Trim Switch - NOSE UP</code></td></tr>
+            <tr><td class="pn">POV &#8592; / &#8594;</td><td class="num">&mdash;</td><td><code>Trim Switch - LEFT WING DOWN</code> / <code>Trim Switch - RIGHT WING DOWN</code></td></tr>
+            <tr><td class="pn">A2 (red)</td><td class="num">3</td><td><code>Bomb Release Button</code></td></tr>
+            <tr><td class="pn">A3 &#8593; / &#8595;</td><td class="num">6 / 8</td><td><code>Speedbrake Switch - OPEN</code> / <code>Speedbrake Switch - CLOSE</code></td></tr>
+            <tr><td class="pn">A3 &#8592; / &#8594;</td><td class="num">9 / 7</td><td><code>Flap Handle - UP else STOP</code> / <code>Flap Handle - DOWN else STOP</code></td></tr>
+            <tr><td class="pn">A4 &#8593; / &#8595;</td><td class="num">11 / 13</td><td><code>AFCS Engage Switch - ENGAGE/OFF</code> / <code>AFCS Altitude Switch - ALT/OFF</code></td></tr>
+            <tr><td class="pn">A4 &#8592; / &#8594;</td><td class="num">14 / 12</td><td><code>APC Power Switch - STBY</code> / <code>APC Power Switch - ENGAGE</code></td></tr>
+            <tr><td class="pn">A4 push</td><td class="num">15</td><td><code>AFCS Heading Select Switch - HDG SEL/OFF</code></td></tr>
+            <tr><td class="pn">C1 &#8593; / &#8595;</td><td class="num">16 / 18</td><td><code>Weapon Function Selector Switch - CW</code> / <code>CCW</code></td></tr>
+            <tr><td class="pn">C1 &#8592;</td><td class="num">19</td><td><code>Guns Charging Switch - READY/SAFE</code></td></tr>
+            <tr><td class="pn">C1 &#8594;</td><td class="num">17</td><td><code>Radar Terrain Clearance - PROFILE/PLAN</code></td></tr>
+            <tr><td class="pn">C1 push</td><td class="num">20</td><td><code>Master Armament Switch - ON/OFF</code></td></tr>
+            <tr><td class="pn">En2</td><td class="num">23 / 24</td><td><code>AFCS Heading Select Pull-to-Set Knob - Continuous Increase</code> / <code>Decrease</code></td></tr>
+            <tr><td class="pn">En1</td><td class="num">25 / 26</td><td><code>Radar Antenna Tilt - Continuous CW</code> / <code>CCW</code></td></tr>
+            <tr><td class="pn">F1</td><td class="num">27</td><td><code>Landing Gear Handle - UP/DOWN</code></td></tr>
             <tr><td class="pn">F2 / F3</td><td class="num">28 / 29</td><td>Modifiers</td></tr>
+            <tr><td class="pn">POV &#8598;</td><td class="num">&mdash;</td><td><code>Trim Reset (Hold)</code></td></tr>
+            <tr><td class="pn">POV &#8601; / &#8600;</td><td class="num">&mdash;</td><td><code>UI Override - Left Shoulder (LShift + Mouse 2/Right Click)</code> / <code>UI Override - Right Shoulder (LCtrl + Mouse 1/Left Click)</code></td></tr>
+            <tr><td class="pn">Base 21 / 22</td><td class="num">21 / 22</td><td><code>Cockpit Camera Move Center</code> / <code>Cockpit Camera Move Forward</code></td></tr>
+            <tr><td class="pn">RY</td><td class="num">axis</td><td>Zoom View</td></tr>
           </tbody></table></div>
 
-        <div class="layerhead"><h3>Layer 2 &mdash; flight config &amp; sensors</h3><span class="modchip">Hold F2</span></div>
+        <div class="layerhead"><h3>Layer 2 &mdash; view, NVGs &amp; sensors</h3><span class="modchip">Hold F2</span></div>
         <div class="scroller"><table>
           <thead><tr><th>VKB control</th><th>Button</th><th>Bind</th></tr></thead><tbody>
-            <tr><td class="pn">POV &#8593;</td><td class="num">&mdash;</td><td><code>Exterior Lights On/Off</code></td></tr>
-            <tr><td class="pn">POV &#8595;</td><td class="num">&mdash;</td><td><code>NVG Toggle</code></td></tr>
-            <tr><td class="pn">POV &#8592; / &#8594;</td><td class="num">&mdash;</td><td><code>NVG Gain Decrease</code> / <code>Increase</code></td></tr>
+            <tr><td class="pn">Fire 1</td><td class="num">1</td><td><code>Trim Reset (Hold)</code></td></tr>
+            <tr><td class="pn">POV &#8593;</td><td class="num">&mdash;</td><td><code>Master Exterior Lights Switch - ON/OFF</code></td></tr>
+            <tr><td class="pn">POV &#8595;</td><td class="num">&mdash;</td><td><code>NVG Night Vision Goggle - Toggle</code></td></tr>
+            <tr><td class="pn">POV &#8592; / &#8594;</td><td class="num">&mdash;</td><td><code>NVG Night Vision Goggle Gain - Decrease</code> / <code>Increase</code></td></tr>
+            <tr><td class="pn">A2 (red)</td><td class="num">3</td><td><code>Mouse Clickable Cockpit Mode - ON/OFF</code></td></tr>
+            <tr><td class="pn">B1 SpeedFire</td><td class="num">4</td><td><code>View Center</code></td></tr>
+            <tr><td class="pn">A3 push</td><td class="num">10</td><td><code>Communication menu</code></td></tr>
+            <tr><td class="pn">En1</td><td class="num">25 / 26</td><td><code>AN/APG-53A Radar Mode Selector - Rotary CCW</code> / <code>CW</code></td></tr>
           </tbody></table></div>
 
-        <div class="layerhead"><h3>Layer 3 &mdash; weapons</h3><span class="modchip">Hold F3</span></div>
+        <div class="layerhead"><h3>Layer 3 &mdash; stations &amp; nav radios</h3><span class="modchip">Hold F3</span></div>
         <div class="scroller"><table>
           <thead><tr><th>VKB control</th><th>Button</th><th>Bind</th></tr></thead><tbody>
-            <tr><td class="pn">POV &#8593; / &#8595;</td><td class="num">&mdash;</td><td><code>AWRS Qty Select CW</code> / <code>CCW</code></td></tr>
-            <tr><td class="pn">POV &#8592; / &#8594;</td><td class="num">&mdash;</td><td><code>AWRS Mode CCW</code> / <code>CW</code></td></tr>
+            <tr><td class="pn">POV &#8593; / &#8595;</td><td class="num">&mdash;</td><td><code>AWRS Quantity Selector Switch - CW/Increase</code> / <code>AWRS Quantity Selector Switch - CCW/Decrease</code></td></tr>
+            <tr><td class="pn">POV &#8592; / &#8594;</td><td class="num">&mdash;</td><td><code>AWRS Mode Selector Switch - CCW</code> / <code>CW</code></td></tr>
+            <tr><td class="pn">A3 &#8593; / &#8595;</td><td class="num">6 / 8</td><td><code>Station 2 Selector - READY/OFF</code> / <code>Station 4 Selector - READY/OFF</code></td></tr>
+            <tr><td class="pn">A3 &#8592; / &#8594;</td><td class="num">9 / 7</td><td><code>Station 5 Selector - READY/OFF</code> / <code>Station 3 Selector - READY/OFF</code></td></tr>
+            <tr><td class="pn">A3 push</td><td class="num">10</td><td><code>Station 1 Selector - READY/OFF</code></td></tr>
+            <tr><td class="pn">C1 &#8593; / &#8595;</td><td class="num">16 / 18</td><td><code>AN/ARN-52 TACAN Mode Switch - CCW</code> / <code>CW</code></td></tr>
+            <tr><td class="pn">C1 &#8592; / &#8594;</td><td class="num">19 / 17</td><td><code>AN/ASN-41 Function Selector Switch - CCW</code> / <code>CW</code></td></tr>
+            <tr><td class="pn">En2</td><td class="num">23 / 24</td><td><code>AN/APN-153 Doppler Navigation Radar Mode Selector - CCW</code> / <code>CW</code></td></tr>
+            <tr><td class="pn">En1</td><td class="num">25 / 26</td><td><code>Throttle Position Lock - Step Up (OFF/IGN/IDLE)</code> / <code>Throttle Position Lock - Step Down (OFF/IGN/IDLE)</code></td></tr>
           </tbody></table></div>
 
-        <div class="layerhead"><h3>Layer 4 &mdash; carrier ops &amp; housekeeping</h3><span class="modchip">Hold F2 + F3</span></div>
+        <div class="layerhead"><h3>Layer 4 &mdash; carrier &amp; ground ops</h3><span class="modchip">Hold F2 + F3</span></div>
         <div class="scroller"><table>
           <thead><tr><th>VKB control</th><th>Button</th><th>Bind</th></tr></thead><tbody>
             <tr><td class="pn">POV &#8593;</td><td class="num">&mdash;</td><td><code>Catapult Hook-Up</code></td></tr>
             <tr><td class="pn">POV &#8595;</td><td class="num">&mdash;</td><td><code>Pilot Salute</code></td></tr>
-            <tr><td class="pn">POV &#8592;</td><td class="num">&mdash;</td><td><code>Canopy Open/Close</code></td></tr>
-            <tr><td class="pn">POV &#8594;</td><td class="num">&mdash;</td><td><code>JATO Button</code></td></tr>
-            <tr><td class="pn">D1</td><td class="num">5</td><td><code>VOIP PTT</code></td></tr>
+            <tr><td class="pn">POV &#8592;</td><td class="num">&mdash;</td><td><code>Canopy Lever - OPEN/CLOSE</code></td></tr>
+            <tr><td class="pn">POV &#8594;</td><td class="num">&mdash;</td><td><code>Spoiler Arm Switch - ARM/OFF</code></td></tr>
+            <tr><td class="pn">F1</td><td class="num">27</td><td><code>Engine Starter Switch - START</code></td></tr>
+          </tbody></table></div>
+
+        <div class="layerhead"><h3>Layer 5 &mdash; zoom</h3><span class="modchip">Hold Pinky</span></div>
+        <div class="scroller"><table>
+          <thead><tr><th>VKB control</th><th>Button</th><th>Bind</th></tr></thead><tbody>
+            <tr><td class="pn">A3 &#8593; / &#8595;</td><td class="num">6 / 8</td><td><code>Zoom in slow</code> / <code>Zoom normal</code></td></tr>
           </tbody></table></div>
     <!-- /a4e:gen vkb-tables -->
 
     <div class="note">
       <h3>Setting the modifiers up</h3>
       <ul class="tight">
-        <li>Declare both in <strong>Controls &rarr; Modifiers</strong>, device = Gladiator, buttons <strong>28</strong> and <strong>29</strong>. For layer 4, add <em>both</em> to the same binding row &mdash; DCS supports two modifiers per bind.</li>
+        <li>Declare them in <strong>Controls &rarr; Modifiers</strong>, device = Gladiator, buttons <strong>28</strong> and <strong>29</strong>, plus the pinky paddle. For layer 4, add <em>both</em> 28 and 29 to the same binding row &mdash; DCS supports two modifiers per bind.</li>
         <li>Both must be <strong>momentary</strong>. If either is set as a latching toggle in VKB Configurator, the layers stick on.</li>
         <li>Leave 28 and 29 with <strong>no action of their own</strong>. A button still fires its own binding while serving as a modifier, which produces ghost inputs on every layer shift.</li>
         <li>A modified binding takes precedence over the unmodified one on the same control, so there's no need to clear base assignments.</li>
@@ -983,9 +1047,9 @@ embed: true
     </div>
 
     <div class="note">
-      <h3>Why layers 2 to 4 are nearly empty</h3>
-      <p>The gamepad chart had to hide AFCS, APC, speedbrake, flaps, wheel brake, antenna tilt and weapon function behind modifiers because it only had about fourteen inputs. The EVO has 29 buttons, two encoders and an analog wheel, so all of those live on the base layer where they belong.</p>
-      <p>Resist filling the empty slots. Keep layer 4 for jobs you do with the aircraft stable and slow &mdash; hooking to the cat, canopy, NVGs &mdash; because holding both base buttons commits your left hand and takes it off the throttle.</p>
+      <h3>How the layers ended up loaded</h3>
+      <p>The gamepad chart had to hide AFCS, APC, speedbrake, flaps, wheel brake, antenna tilt and weapon function behind modifiers because it only had about fourteen inputs. The EVO has 29 buttons, two encoders and an analog wheel, so all of those sit on the base layer where they belong.</p>
+      <p>What the modifiers ended up carrying is everything that is <em>set once and left</em>: F2 for view, NVGs and the radar mode selector, F3 for station selectors and the nav radios &mdash; TACAN, ASN-41, the doppler. Layer 4 stays for jobs done with the aircraft stable and slow &mdash; starter, canopy, hooking to the cat &mdash; because holding both base buttons commits your left hand and takes it off the throttle. Pinky is only zoom.</p>
     </div>
 
   </section>

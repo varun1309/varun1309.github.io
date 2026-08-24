@@ -44,9 +44,6 @@
       "pov_r"
     ],
     [
-      "pov_ul"
-    ],
-    [
       "a2"
     ],
     [
@@ -102,6 +99,21 @@
     [
       "f2",
       "f3"
+    ],
+    [
+      "pov_ul",
+      "pov_ur"
+    ],
+    [
+      "pov_dl",
+      "pov_dr"
+    ],
+    [
+      "btn21",
+      "btn22"
+    ],
+    [
+      "axis_ry"
     ]
   ],
   "controls": [
@@ -661,7 +673,7 @@
         77
       ],
       "boxFromTemplate": false,
-      "accent": true
+      "accent": false
     },
     {
       "id": "f2",
@@ -731,44 +743,114 @@
       "role": "Rudder",
       "boxFromTemplate": false,
       "accent": false
+    },
+    {
+      "id": "pov_dl",
+      "vkb": "POV &#8601;",
+      "input": "JOY_BTN_POV1_DL",
+      "button": "&mdash;",
+      "anchor": [
+        234,
+        361
+      ],
+      "box": [
+        214,
+        300,
+        347,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "pov_dr",
+      "vkb": "POV &#8600;",
+      "input": "JOY_BTN_POV1_DR",
+      "button": "&mdash;",
+      "anchor": [
+        965,
+        361
+      ],
+      "box": [
+        945,
+        300,
+        347,
+        78
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "pov_ur",
+      "vkb": "POV &#8599;",
+      "input": "JOY_BTN_POV1_UR",
+      "button": "&mdash;",
+      "anchor": [
+        965,
+        176
+      ],
+      "box": [
+        945,
+        115,
+        347,
+        89
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "btn21",
+      "vkb": "Base 21",
+      "input": "JOY_BTN21",
+      "button": "21",
+      "anchor": [
+        877,
+        1683
+      ],
+      "box": [
+        801,
+        1630,
+        347,
+        77
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "btn22",
+      "vkb": "Base 22",
+      "input": "JOY_BTN22",
+      "button": "22",
+      "anchor": [
+        877,
+        1771
+      ],
+      "box": [
+        801,
+        1711,
+        347,
+        89
+      ],
+      "boxFromTemplate": false,
+      "accent": false
+    },
+    {
+      "id": "axis_ry",
+      "vkb": "RY",
+      "input": "JOY_RY",
+      "button": "axis",
+      "anchor": null,
+      "box": null,
+      "boxFromTemplate": false,
+      "accent": false
     }
   ],
   "unassignedTemplateFields": [
-    [
-      945,
-      115,
-      347,
-      89
-    ],
-    [
-      214,
-      300,
-      347,
-      78
-    ],
-    [
-      945,
-      300,
-      347,
-      78
-    ],
     [
       580,
       462,
       346,
       77
-    ],
-    [
-      801,
-      1630,
-      347,
-      77
-    ],
-    [
-      801,
-      1711,
-      347,
-      89
     ]
   ],
   "printedButUnused": {
