@@ -1,11 +1,14 @@
 # Regenerating the A-4E-C post
 
-The HOTAS drawing and its four tables are generated from data. Re-map your stick
-in DCS, export the profile, run one command, and the template picture and the
-tables both follow.
+The HOTAS drawing and its tables are generated from data. Re-map your stick in
+DCS, replace `assets/config/a4ec.cfg.diff.lua`, run one command, and the template
+picture and the tables both follow.
+
+**For the step-by-step, see [UPDATING.md](UPDATING.md).** This file covers how the
+generator is put together.
 
 ```bash
-python3 tools/a4e/build.py ~/path/Gladiator.diff.lua modifiers.lua default.lua
+python3 tools/a4e/build.py assets/config/a4ec.cfg.diff.lua
 ```
 
 Arguments go in any order — each `.lua` is classified by reading it. Then preview:
@@ -18,14 +21,15 @@ bundle exec jekyll serve     # needs Ruby 3+; the macOS system Ruby (2.6) is too
 
 Every drawing in the post is inline SVG, so "rendering" is text generation — no
 rasteriser, no image pipeline, no binary assets to regenerate. The one real image
-is the VKB template photograph, which is `<use>`d four times and never redrawn.
+is the VKB template photograph, which is `<use>`d once per layer and never
+redrawn.
 
 ## What comes from where
 
 | File | What it holds |
 |---|---|
 | `data/controls.json` | one entry per physical VKB control: its DCS input name, its label field on the template, its text baseline |
-| `data/layers.json` | the four modifier layers and their titles |
+| `data/layers.json` | the modifier layers and their titles; the sheet count, `viewBox` and aria-label all derive from it |
 | `data/abbrev.json` | DCS command name → the short form that fits a label field |
 | `data/bindings.json` | the effective bindings, rewritten by `build.py` from your `.lua` |
 | `data/cockpit.json` | page 1, the plan-view cockpit map |
@@ -40,16 +44,9 @@ family is a line of JSON instead of hand-edited SVG coordinates.
 
 ## Which .lua to export
 
-* `Saved Games/DCS/Config/Input/A-4E-C/joystick/<device>.diff.lua` — your
-  bindings. **Holds only the changes from default**, so pass it together with:
-* `Mods/aircraft/A-4E-C/Input/A-4E-C/joystick/default.lua` — the mod's own
-  catalogue. Without it, a control still sitting on the DCS default is
-  indistinguishable from an unbound one and renders as unbound.
-* `Saved Games/DCS/Config/Input/modifiers.lua` — what makes `JOY_BTN28` display
-  as `F2`. Without it, layers whose modifier is not literally named `F2`/`F3`
-  come out empty.
-
-No Lua runtime is needed; `lua.py` reads the table format directly.
+See [UPDATING.md](UPDATING.md) — it covers the file shapes, which extra files
+help, and what each report line means. No Lua runtime is needed; `lua.py` reads
+the table format directly.
 
 ## When something looks wrong
 
@@ -59,8 +56,8 @@ No Lua runtime is needed; `lua.py` reads the table format directly.
 * bindings on inputs no control claims — a keyboard bind, a second device, or a
   button missing from the roster. These are **not drawn**, and saying so is the
   point: nothing is silently dropped;
-* labels too long for a 347-unit field, as a copy-pasteable `abbrev.json` line;
-* which of the four regions actually changed.
+* labels too long for a field (16 characters), as copy-pasteable `abbrev.json` lines;
+* which of the four fenced regions actually changed.
 
 If a label lands in the wrong place, fix that control's `anchor`/`box` in
 `controls.json`. If a whole control is misidentified, its `input` is wrong — that
@@ -94,7 +91,7 @@ whitespace and the order of non-overlapping siblings may differ.
 
 `harvest.py` and `gen_roster.py` rebuilt the data files from the hand-authored
 SVGs and are kept for provenance. You only need them if the post is re-authored
-by hand. `harvest.py` recovers the four POV label boxes that no layer shades by
+by hand. `harvest.py` recovers POV label boxes that no layer shades by
 detecting the printed fields on the template JPG (needs Pillow + numpy).
 
 ## Files
@@ -102,7 +99,7 @@ detecting the printed fields on the template JPG (needs Pillow + numpy).
 ```
 lua.py           Lua table reader, no runtime required
 dcs.py           .lua -> normalised bindings; merges default + diff
-render_vkb.py    page 3: the template SVG and the four tables
+render_vkb.py    page 3: the template SVG and the per-layer tables
 render_pages.py  page 1 and page 2
 inject.py        marker-fenced in-place replacement
 build.py         the entry point

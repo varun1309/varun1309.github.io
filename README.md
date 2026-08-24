@@ -62,7 +62,11 @@ done for the A-4E-C post.
 The A-4E-C post's diagrams and HOTAS tables are generated from JSON under
 `tools/a4e/data/`, with the keybind layers driven by a DCS input export. Four
 marker-fenced regions of the post are rewritten by `tools/a4e/build.py`;
-everything outside them is hand-written. See `tools/a4e/README.md`.
+everything outside them is hand-written.
+
+To refresh it after re-mapping the stick in DCS, see
+[`tools/a4e/UPDATING.md`](tools/a4e/UPDATING.md); for how the generator works,
+[`tools/a4e/README.md`](tools/a4e/README.md).
 
 ## Licence
 
