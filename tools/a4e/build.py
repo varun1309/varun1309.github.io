@@ -86,10 +86,15 @@ def main(argv=None):
         for shape, paths in kinds.items():
             for p in paths:
                 print(f'  {shape:<10} {p}')
-        if not kinds['modifiers']:
-            print('  ! no modifiers.lua given: layers are matched on raw button '
-                  'names, so any layer whose modifier is not literally called '
-                  '"F2"/"F3" will come out empty')
+        # Some exports store modifier *names* in `reformers` ("F2"), others store
+        # the raw button ("JOY_BTN28"). Only the latter needs modifiers.lua, so
+        # only warn when raw keys actually turn up.
+        raw = sorted({m for b in bindings + offstick for m in b['modifiers']
+                      if m.startswith('JOY_')})
+        if raw and not kinds['modifiers']:
+            print(f'  ! no modifiers.lua given and these modifiers are raw button '
+                  f'names: {raw}. Their layers will not match layers.json until '
+                  f'you pass modifiers.lua.')
         if not kinds['default']:
             print('  ! no default.lua given: a control still on the mod default '
                   'will render as unbound')

@@ -57,9 +57,14 @@ def _listish(v):
     return [v]
 
 
+# `changed` holds a combo whose filter (curve, deadzone, invert) was edited. The
+# binding itself still exists, so it counts as present, exactly like `added`.
+PRESENT = ('added', 'changed')
+
+
 def _combos(entry):
-    """Combo list from any of the three field names DCS has used."""
-    for field in ('combos', 'added', 'removed'):
+    """Combo list from any of the field names DCS has used."""
+    for field in ('combos', 'added', 'changed', 'removed'):
         if field in entry:
             yield field, _listish(entry[field])
 
@@ -146,7 +151,7 @@ def _parse_diff(tbl: dict):
                         continue
                     b = Binding(kind, name, combo['key'], _modifiers_of(combo),
                                 str(cid), '', 'diff')
-                    (added if which == 'added' else removed).append(b)
+                    (added if which in PRESENT else removed).append(b)
     return added, removed
 
 

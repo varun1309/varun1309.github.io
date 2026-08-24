@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 
 from svgutil import esc, num
 
@@ -22,9 +23,15 @@ DATA = HERE / 'data'
 # tails short enough to stand alone once a shared prefix is dropped
 SENSE_WORDS = {'CW', 'CCW', 'INC', 'DEC', 'INCREASE', 'DECREASE'}
 
-ARIA = ("The official VKB Gladiator NXT EVO keybind template, filled in four "
-        "times &#8212; once per modifier layer &#8212; with the A-4E-C bindings "
-        "written into each control's label box.")
+WORDS = {1: 'once', 2: 'twice', 3: 'three times', 4: 'four times',
+         5: 'five times', 6: 'six times', 7: 'seven times', 8: 'eight times'}
+
+
+def aria(n_layers: int) -> str:
+    return ("The official VKB Gladiator NXT EVO keybind template, filled in "
+            f"{WORDS.get(n_layers, str(n_layers) + ' times')} &#8212; once per "
+            "modifier layer &#8212; with the A-4E-C bindings written into each "
+            "control's label box.")
 
 
 def load():
@@ -47,21 +54,31 @@ def shorten(cmd: str, table: dict, width_units: int = 347, size: int = 26) -> st
     if cmd in table:
         return table[cmd]
     s = cmd.upper()
-    for a, b in (('CONTINUOUS ', ''), (' ELSE STOP', ''), (' ELSE OFF', ''),
-                 ('INCREASE', 'INC'), ('DECREASE', 'DEC'), ('DOWN', 'DN'),
-                 ('LEFT', 'L'), ('RIGHT', 'R'), ('SELECT', 'SEL'),
-                 ('WEAPON', 'WPN'), ('ANTENNA', 'ANT'), ('TOGGLE', ''),
-                 ('  ', ' ')):
+    for a, b in ((r'\bCONTINUOUS\b', ''), (r'\bELSE (STOP|OFF)\b', ''),
+                 (r'\bSWITCH\b', ''), (r'\bSELECTOR\b', 'SEL'),
+                 (r'\bINCREASE\b', 'INC'), (r'\bDECREASE\b', 'DEC'),
+                 (r'\bDOWN\b', 'DN'), (r'\bLEFT\b', 'L'), (r'\bRIGHT\b', 'R'),
+                 (r'\bSELECT\b', 'SEL'), (r'\bWEAPON\b', 'WPN'),
+                 (r'\bANTENNA\b', 'ANT'), (r'\bTOGGLE\b', '')):
         if _fits(s, width_units, size):
             break
-        s = s.replace(a, b).strip()
+        # whole words only: a bare SELECT->SEL turns SELECTOR into SELOR
+        s = re.sub(r'\s*-\s*$', '', re.sub(a, b, s)).strip()
+        s = re.sub(r'\s{2,}', ' ', s)
     # monospace at 26 units with 0.5 tracking fits ~21 characters in 347 units
     limit = _char_limit(width_units, size)
     return s if len(s) <= limit else s[:limit - 1].rstrip() + ELLIPSIS
 
 
 def _char_limit(width_units: int, size: int) -> int:
-    return int((width_units - 60) / (size * 0.60 + 0.5))
+    """Characters that fit a label field.
+
+    Measured in the browser rather than guessed: the labels start 76 units into
+    the field, and the monospace face renders at 0.6355 * font-size per glyph,
+    so a 347-unit field at size 26 takes 16 characters. The old 0.60 estimate
+    allowed 17 and let two labels overhang by ten units.
+    """
+    return int((width_units - 76) / (size * 0.6355))
 
 
 def _fits(s: str, width_units: int, size: int) -> bool:
@@ -86,7 +103,7 @@ def render_svg(ctl, layers, ab, bindings) -> str:
     sheet = L['sheetH']
     total = sheet * len(layers) + (sheet - img['h'] - L['imageDy'])
 
-    out = [f'<svg viewBox="0 0 {img["w"]} {total}" role="img" aria-label="{ARIA}">',
+    out = [f'<svg viewBox="0 0 {img["w"]} {total}" role="img" aria-label="{aria(len(layers))}">',
            '<defs>',
            f'<image id="{img["id"]}" x="0" y="0" width="{img["w"]}" '
            f'height="{img["h"]}" href="{img["href"]}"/>',
